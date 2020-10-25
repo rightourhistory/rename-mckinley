@@ -10,5 +10,7 @@ module.exports = {
     siteUrl: `http://127.0.0.1`,
     description: `A movement for the people of Hawai'i`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-typescript"
+  ],
 }
