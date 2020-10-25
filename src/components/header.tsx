@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import { Link } from "gatsby";
+import "./header.scss";
 
 interface Props {
   text?: string;
@@ -6,6 +8,8 @@ interface Props {
 
 export default function Header(props: Props) {
   return (
-    props.text ? <h1>{props.text}</h1> : <h1>Default</h1>
+    <div className="header">
+      <h1>A MOVEMENT FOR THE PEOPLE OF HAWAI'I</h1>
+    </div>
   );
 }

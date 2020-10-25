@@ -1,0 +1,15 @@
+@import '~sanitize.css';
+
+html {
+  --color-background--base: #CED3CD;
+  --text-color--primary-light: #fff;
+  --text-color--primary-dark: #090909;
+  --text-color--accent: #c83a22;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--color-background--base);
+  background-image: url(../images/topo.jpg);
+  background-size: cover;
+}

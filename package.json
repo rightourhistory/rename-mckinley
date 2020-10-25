@@ -16,9 +16,13 @@
   },
   "dependencies": {
     "gatsby": "^2.24.79",
+    "gatsby-plugin-sass": "^2.3.21",
     "gatsby-plugin-typescript": "^2.4.24",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "sanitize.css": "^12.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.5.0",

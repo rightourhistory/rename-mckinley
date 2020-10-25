@@ -1,0 +1,18 @@
+.splash {
+  max-width: 66.25rem;
+  margin: 0 auto;
+  text-align: center;
+  &__headline {
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    em {
+      font-style: initial;
+      color: var(--text-color--accent)
+    }
+  }
+  &__cta {
+    font-size: 2.25rem;
+    color: var(--text-color--primary-dark);
+  }
+}
