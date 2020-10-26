@@ -16,17 +16,12 @@ export default class Splash extends React.Component {
   }
 }
 
-interface SplashHeadProps {
-  rotLeft?: number;
-  rotRight?: number;
-}
-
-class SplashHead extends React.Component<SplashHeadProps> {
+class SplashHead extends React.Component {
   private containerRef: React.RefObject<HTMLDivElement>;
   private eyeLeftRef: React.RefObject<HTMLDivElement>;
   private eyeRightRef: React.RefObject<HTMLDivElement>;
 
-  constructor(props: SplashHeadProps) {
+  constructor(props: any) {
     super(props);
     this.containerRef = React.createRef<HTMLDivElement>();
     this.eyeLeftRef = React.createRef<HTMLDivElement>();

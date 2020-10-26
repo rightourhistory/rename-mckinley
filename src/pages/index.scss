@@ -1,14 +1,23 @@
 @import '~sanitize.css';
 
 html {
-  --color-background--base: #CED3CD;
+  --color--accent: #c83a22;
+  --color--accent-dark: #ac1d11;
+  --color--offwhite: #CED3CD;
+
+  --background-color--base: var(--color--offwhite);
+  --background-color--accent: var(--color--accent);
   --text-color--primary-light: #fff;
   --text-color--primary-dark: #090909;
-  --text-color--accent: #c83a22;
+  --text-color--accent: var(--color--accent);
+  --text-color--accent-dark: var(--color--accent-dark);
+  --text-font--sans-serif: "Lato", sans-serif;
+  --text-font--script: "Caveat";
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background-color: var(--color-background--base);
+  font-family: var(--text-font--sans-serif);
+  background-color: var(--background-color--base);
+  font-size: 1.6rem;
 }

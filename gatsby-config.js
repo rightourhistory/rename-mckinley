@@ -17,7 +17,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Lato:400,700,900", "Caveat"]
+          families: ["Lato:400,700,900", "Caveat:400,700"]
         }
       }
     }
