@@ -3,12 +3,13 @@
 html {
   --color--accent: #c83a22;
   --color--accent-dark: #ac1d11;
+  --color--nearblack: #090909;
   --color--offwhite: #CED3CD;
 
   --background-color--base: var(--color--offwhite);
   --background-color--accent: var(--color--accent);
   --text-color--primary-light: #fff;
-  --text-color--primary-dark: #090909;
+  --text-color--primary-dark: var(--color--nearblack);
   --text-color--accent: var(--color--accent);
   --text-color--accent-dark: var(--color--accent-dark);
   --text-font--sans-serif: "Lato", sans-serif;

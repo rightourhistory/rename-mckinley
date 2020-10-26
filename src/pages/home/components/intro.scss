@@ -8,6 +8,8 @@
 }
 
 .intro-policy {
+  max-width: 160rem;
+  margin: 8rem auto 0;
   padding: 0 8rem;
   a {
     color: var(--text-color--primary-light);
@@ -27,5 +29,89 @@
   &__subtext {
     color: var(--text-color--accent-dark);
     font-size: 2.4rem;
+  }
+}
+
+.intro-association {
+  max-width: 140rem;
+  margin: 8rem auto 0;
+  padding: 0 16rem;
+  font-size: 2rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 2rem 0 0;
+      &:first-of-type {
+        margin-top: 4rem;
+      }
+      &:last-of-type {
+        margin-bottom: 4rem;
+      }
+    }
+    s {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+        transform: translateY(50%);
+        left: 0;
+      }
+    }
+    img {
+      &:first-of-type {
+        transform: translateX(5rem);
+      }
+    }
+    &--1 {
+      img {
+        align-self: flex-end;
+      }
+      s:after {
+        height: 0.6rem;
+        background: var(--text-color--primary-dark);
+      }
+    }
+    &--2 {
+      s {
+        &:before {
+          content: "Denali";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 110%;
+          transform: translateY(80%) translateX(-5%) rotate(-10deg);
+          color: var(--text-color--primary-light);
+          font-family: var(--text-font--script);
+          font-size: 4rem;
+          font-weight: 700;
+        }
+        &:after {
+          height: 0;
+          padding-bottom: 44.3%;
+          background-image: url(../../../images/strike.svg);
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+      img {
+        align-self: flex-start;
+        margin-bottom: 8rem;
+        padding-top: 5rem;
+        &:last-of-type {
+          padding-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
