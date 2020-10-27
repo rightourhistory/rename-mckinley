@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee, { MarqueeMessage } from "../../../components/marquee";
 import "./intro.scss";
 
 export default class Intro extends React.Component {
@@ -30,10 +31,36 @@ class IntroPolicy extends React.Component {
   }
 }
 
+const messageArray: MarqueeMessage[] = [
+  {
+    line1: "SOURCE OF",
+    line2: "AGRICULTURE",
+    width: 370
+  },
+  {
+    line1: "KEY PACIFIC",
+    line2: "PORT",
+    width: 330
+  },
+  {
+    line1: "MILITARY",
+    line2: "POSITIONING",
+    width: 360
+  },
+  {
+    line1: "TARIFF",
+    line2: "AVOIDANCE",
+    width: 325
+  }
+];
+
 class IntroAssociation extends React.Component {
   render() {
     return (
       <div className="intro-association">
+        <div className="intro-association__marquee">
+          <Marquee messages={messageArray} />
+        </div>
         <div className="intro-association__container">
           <div className="intro-association__column intro-association__column--1">
             <img src="https://via.placeholder.com/280x260.png/AC1D11/AC1D11" />

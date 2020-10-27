@@ -1,0 +1,22 @@
+.marquee {
+  height: 100%;
+  white-space: nowrap;
+  svg {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    margin-right: 4rem;
+    &:nth-of-type(2n) {
+      stroke: var(--text-color--primary-light);
+      fill: transparent;
+    }
+    &:nth-of-type(2n - 1) {
+      fill: var(--text-color--primary-light);
+    }
+    text {
+      font-size: 5.2rem;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+    }
+  }
+}

@@ -33,14 +33,22 @@
 }
 
 .intro-association {
-  max-width: 140rem;
-  margin: 8rem auto 0;
-  padding: 0 16rem;
   font-size: 2rem;
+  &__marquee {
+    position: absolute;
+    z-index: 105;
+    width: 100%;
+    height: 10vw;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
+    max-width: 140rem;
+    margin: 8rem auto 0;
+    padding: 0 16rem;
   }
   &__column {
     display: flex;
@@ -107,6 +115,10 @@
         align-self: flex-start;
         margin-bottom: 8rem;
         padding-top: 5rem;
+        &:first-of-type {
+          position: relative;
+          z-index: 110;
+        }
         &:last-of-type {
           padding-top: 0;
           margin-bottom: 0;
