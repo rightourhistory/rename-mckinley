@@ -1,6 +1,8 @@
 import React from "react";
 import "./marquee.scss";
-import {TweenLite, Linear} from "gsap";
+import { TweenLite, Linear, gsap } from "gsap";
+import { CSSPlugin } from "gsap/all";
+gsap.registerPlugin(CSSPlugin);
 
 export interface MarqueeMessage {
   line1: string;
@@ -26,8 +28,8 @@ export default class Marquee extends React.Component<Props, State> {
     this.svgRefsArray = [];
     this.containerRef = React.createRef();
     this.state = {
-      width: undefined
-    }
+      width: undefined,
+    };
   }
 
   render() {
@@ -37,7 +39,7 @@ export default class Marquee extends React.Component<Props, State> {
         return (
           <svg
             key={i}
-            ref={(ref) => {
+            ref={ref => {
               this.svgRefsArray[i] = ref;
             }}
             viewBox={`0 0 ${message.width} 100`}
@@ -59,7 +61,7 @@ export default class Marquee extends React.Component<Props, State> {
         ref={this.containerRef}
         style={{
           height: this.props.height,
-          width: this.state.width
+          width: this.state.width,
         }}
       >
         {svgArray}
@@ -67,11 +69,11 @@ export default class Marquee extends React.Component<Props, State> {
       </div>
     );
   }
-  
+
   componentDidMount() {
     this.svgRefsArray.forEach((item: SVGSVGElement | null) => {
       if (item === null) return;
-    })
+    });
     const width = this.svgRefsArray
       .map((item: SVGSVGElement | null) => {
         if (item) {
@@ -82,13 +84,13 @@ export default class Marquee extends React.Component<Props, State> {
         return a + b;
       }, 0);
     this.setState({
-      width: width
+      width: width,
     });
     TweenLite.to(this.containerRef.current, {
       x: -width,
       duration: 30,
       repeat: -1,
-      ease: Linear.easeNone
+      ease: Linear.easeNone,
     });
   }
 }

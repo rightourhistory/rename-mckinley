@@ -6,12 +6,12 @@ import Splash from "./home/components/splash";
 import "./index.scss";
 
 export default function Home() {
-  return ( 
+  return (
     <>
       <Header />
       <Splash />
       <Intro />
       <HistoryGroup />
     </>
-  )
+  );
 }
