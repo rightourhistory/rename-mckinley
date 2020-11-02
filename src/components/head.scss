@@ -1,0 +1,53 @@
+.head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+
+  &--left {
+    position: fixed;
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top left;
+
+    .head--left & {
+      top: 0;
+      left: 2rem;
+      transform: scale(0.6) translateX(-25%);
+    }
+  }
+
+  &__portrait {
+    position: relative;
+    z-index: 520;
+    pointer-events: none;
+  }
+
+  &__eye {
+    position: absolute;
+    z-index: 510;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-size: 2rem 2rem;
+    background-image: url("../images/iris.png");
+    background-position: center left;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+
+    &--left {
+      top: 23rem;
+      left: 25.6rem;
+    }
+
+    &--right {
+      top: 23.2rem;
+      left: 34rem;
+    }
+  }
+}

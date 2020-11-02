@@ -2,8 +2,10 @@ import React from "react";
 import classNames from "classnames";
 import "./header.scss";
 import Logo from "../images/logo-rohh.svg";
+import { HeadPosition } from "./head";
 
 interface Props {
+  onToggleHeader(position: HeadPosition): any;
   text?: string;
 }
 
@@ -47,8 +49,10 @@ export default class Header extends React.Component<Props, State> {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             this.setState({ scrolledPastSplash: false });
+            this.props.onToggleHeader(HeadPosition.Left);
           } else {
             this.setState({ scrolledPastSplash: true });
+            this.props.onToggleHeader(HeadPosition.Centered);
           }
         });
       });
