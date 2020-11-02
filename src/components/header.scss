@@ -1,9 +1,29 @@
 .header {
   position: fixed;
   padding: 2rem;
-  h1 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
+  z-index: 10000;
+
+  &__logo {
+    display: inline-block;
+    height: auto;
+    width: 20rem;
+    fill: var(--text-color--primary-dark);
   }
+}
+
+.header-logo {
+  &__base {
+    fill: rgba(#fff, 0);
+    transition: fill 250ms ease-out;
+    .header--slide-in & {
+      fill: var(--text-color--primary-light);
+    }
+  }
+}
+
+.splash-bottom-observable {
+  position: absolute;
+  bottom: 0;
+  height: 1rem;
+  width: 100%;
 }

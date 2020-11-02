@@ -15,7 +15,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/classnames": "^2.2.11",
+    "classnames": "^2.2.6",
     "gatsby": "^2.24.79",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.21",
     "gatsby-plugin-typescript": "^2.4.24",
     "gatsby-plugin-web-font-loader": "^1.0.4",

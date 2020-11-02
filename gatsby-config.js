@@ -8,11 +8,12 @@ module.exports = {
   siteMetadata: {
     title: "Rename McKinley High School",
     siteUrl: "http://127.0.0.1",
-    description: "A movement for the people of Hawai'i",
+    description: "A movement for the people of Hawai'i"
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-typescript",
+    "gatsby-plugin-react-svg",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -21,5 +22,5 @@ module.exports = {
         }
       }
     }
-  ],
-}
+  ]
+};

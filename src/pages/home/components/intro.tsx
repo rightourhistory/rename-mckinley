@@ -38,23 +38,23 @@ const messageArray: MarqueeMessage[] = [
   {
     line1: "SOURCE OF",
     line2: "AGRICULTURE",
-    width: 370,
+    width: 370
   },
   {
     line1: "KEY PACIFIC",
     line2: "PORT",
-    width: 330,
+    width: 330
   },
   {
     line1: "MILITARY",
     line2: "POSITIONING",
-    width: 360,
+    width: 360
   },
   {
     line1: "TARIFF",
     line2: "AVOIDANCE",
-    width: 325,
-  },
+    width: 325
+  }
 ];
 
 class IntroAssociation extends React.Component {
