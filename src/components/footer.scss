@@ -1,11 +1,62 @@
 .footer {
-  padding: 4rem 0;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 8rem 0;
+  color: var(--background-color--dark);
+  background-image: url(../images/topo.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--background-color--white);
+  &__container {
+    max-width: 160rem;
+    margin: 0 auto;
+  }
+  &__title {
+    margin: 0 0 2rem;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+  }
 }
 
-.footer-footnotes {
-  :target {
-    background: yellow;
+.footer-references {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-references-item {
+  &__link {
+    color: var(--text-color--accent);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    height: 2.4rem;
+    margin-left: 0.5rem;
+    svg {
+      height: 100%;
+      width: auto;
+      fill: currentColor;
+    }
+  }
+  &__title,
+  &__label {
+    margin: 0;
+  }
+  &__title {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  &__label {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
   }
 }

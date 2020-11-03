@@ -2,12 +2,13 @@
 
 html {
   --color--accent: #c83a22;
-  --color--accent-dark: #ac1d11;
+  --color--accent-dark: #702415;
   --color--nearblack: #090909;
   --color--offwhite: #ced3cd;
   --color--white: #fff;
 
   --background-color--base: var(--color--offwhite);
+  --background-color--white: var(--color--white);
   --background-color--accent: var(--color--accent);
   --background-color--dark: var(--color--nearblack);
   --text-color--primary-light: var(--color--white);

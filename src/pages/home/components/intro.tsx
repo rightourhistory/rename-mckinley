@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee, { MarqueeMessage } from "../../../components/marquee";
 import "./intro.scss";
-import SuperscriptLink from "../../../components/superscript-link";
+import SourceLink from "../../../components/source-link";
 
 export default class Intro extends React.Component {
   render() {
@@ -20,11 +20,8 @@ class IntroPolicy extends React.Component {
       <div className="intro-policy">
         <div className="intro-policy__container">
           <p className="intro-policy__text">
-            The provisions of{" "}
-            <SuperscriptLink id="boe6750">
-              State of Hawaiʻi Board of Education Policy 6750
-            </SuperscriptLink>{" "}
-            state that:
+            The provisions of <strong>State of Hawaiʻi policy</strong> state
+            that:
           </p>
           <blockquote className="intro-policy__blockquote">
             The name of a school facility shall be a unique identifier... to
@@ -33,7 +30,7 @@ class IntroPolicy extends React.Component {
             education.
           </blockquote>
           <p className="intro-policy__subtext">
-            From Board of Education 6750 [EMOJI ADDED FOR EMPHASIS]
+            <SourceLink href="http://boe.hawaii.gov/policies/6000series/Pages/6750.aspx" />
           </p>
         </div>
       </div>
