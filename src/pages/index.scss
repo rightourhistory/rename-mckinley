@@ -24,3 +24,7 @@ body {
   background-color: var(--background-color--base);
   font-size: 1.6rem;
 }
+
+.main {
+  counter-reset: footnotes;
+}
