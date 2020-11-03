@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import "./header.scss";
-import Logo from "../images/logo-rohh.svg";
+import Logo from "../images/logo-rohh.inline.svg";
 import { HeadPosition } from "./head";
 
 interface Props {
