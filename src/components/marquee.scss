@@ -7,11 +7,12 @@
     width: auto;
     margin-right: 4rem;
     &:nth-of-type(2n) {
-      stroke: var(--text-color--primary-light);
+      stroke: var(--text-color--light-primary);
+      stroke-width: 0.15rem;
       fill: transparent;
     }
     &:nth-of-type(2n - 1) {
-      fill: var(--text-color--primary-light);
+      fill: var(--text-color--light-primary);
     }
     text {
       font-size: 5.2rem;

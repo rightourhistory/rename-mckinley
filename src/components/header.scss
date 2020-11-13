@@ -7,7 +7,7 @@
     display: inline-block;
     height: auto;
     width: 20rem;
-    fill: var(--text-color--primary-dark);
+    fill: var(--text-color--dark-primary);
   }
 }
 
@@ -16,7 +16,7 @@
     fill: rgba(#fff, 0);
     transition: fill 250ms ease-out;
     .header--slide-in & {
-      fill: var(--text-color--primary-light);
+      fill: var(--text-color--light-primary);
     }
   }
 }
