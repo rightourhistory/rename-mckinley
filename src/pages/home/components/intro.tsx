@@ -19,19 +19,22 @@ class IntroPolicy extends React.Component {
     return (
       <div className="intro-policy">
         <div className="intro-policy__container">
-          <p className="intro-policy__text">
+          <h3 className="intro-policy__text" id="provisions-of-boe">
             The provisions of <strong>State of Hawaiʻi policy</strong> state
             that:
-          </p>
-          <blockquote className="intro-policy__blockquote">
+          </h3>
+          <blockquote
+            className="intro-policy__blockquote"
+            aria-describedby="provisions-of-boe"
+          >
             The name of a school facility shall be a unique identifier... to
             identify the facility in other ways that bear ✨ positive
             association ✨ for the school, school-community, or public
             education.
           </blockquote>
-          <p className="intro-policy__subtext">
+          <div className="intro-policy__subtext">
             <SourceLink href="http://boe.hawaii.gov/policies/6000series/Pages/6750.aspx" />
-          </p>
+          </div>
         </div>
       </div>
     );
@@ -42,22 +45,22 @@ const messageArray: MarqueeMessage[] = [
   {
     line1: "SOURCE OF",
     line2: "AGRICULTURE",
-    width: 370
+    width: 380
   },
   {
     line1: "KEY PACIFIC",
     line2: "PORT",
-    width: 330
+    width: 340
   },
   {
     line1: "MILITARY",
     line2: "POSITIONING",
-    width: 360
+    width: 370
   },
   {
     line1: "TARIFF",
     line2: "AVOIDANCE",
-    width: 325
+    width: 335
   }
 ];
 

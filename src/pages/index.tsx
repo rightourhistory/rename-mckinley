@@ -6,6 +6,7 @@ import { Head, HeadPosition } from "../components/head";
 import Splash from "./home/components/splash";
 import "./index.scss";
 import Footer from "../components/footer";
+import { FiveReasons } from "./home/components/five-reasons";
 
 interface State {
   headPosition: HeadPosition;
@@ -26,6 +27,7 @@ export default class Home extends React.Component<{}, State> {
         <Head position={this.state.headPosition} />
         <Splash />
         <Intro />
+        <FiveReasons />
         <HistoryGroup />
         <Footer />
       </main>

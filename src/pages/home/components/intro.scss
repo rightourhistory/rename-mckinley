@@ -11,7 +11,7 @@
   max-width: 160rem;
   margin: 8rem auto 0;
   padding: 0 8rem;
-  color: var(--text-color--light-secondary);
+  color: var(--text-color--light-red);
   &__text {
     font-size: 2.4rem;
     font-weight: 400;
@@ -27,14 +27,15 @@
     margin: 0 0 0 4rem;
   }
   &__subtext {
-    color: var(--text-color--light-secondary);
+    color: var(--text-color--light-red);
     font-size: 2.4rem;
+    margin-top: 3rem;
   }
 }
 
 .intro-association {
   font-size: 2rem;
-  color: var(--text-color--light-secondary);
+  color: var(--text-color--light-red);
   &__marquee {
     position: absolute;
     z-index: 105;

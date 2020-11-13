@@ -28,7 +28,7 @@ export default class Marquee extends React.Component<Props, State> {
     this.svgRefsArray = [];
     this.containerRef = React.createRef();
     this.state = {
-      width: undefined,
+      width: undefined
     };
   }
 
@@ -61,7 +61,7 @@ export default class Marquee extends React.Component<Props, State> {
         ref={this.containerRef}
         style={{
           height: this.props.height,
-          width: this.state.width,
+          width: this.state.width
         }}
       >
         {svgArray}
@@ -73,24 +73,24 @@ export default class Marquee extends React.Component<Props, State> {
   componentDidMount() {
     this.svgRefsArray.forEach((item: SVGSVGElement | null) => {
       if (item === null) return;
-    });
-    const width = this.svgRefsArray
-      .map((item: SVGSVGElement | null) => {
-        if (item) {
-          return item.getBoundingClientRect().width + 40;
-        }
-      })
-      .reduce((a: number, b: number) => {
-        return a + b;
-      }, 0);
-    this.setState({
-      width: width,
-    });
-    TweenLite.to(this.containerRef.current, {
-      x: -width,
-      duration: 30,
-      repeat: -1,
-      ease: Linear.easeNone,
+      const width = this.svgRefsArray
+        .map((item: SVGSVGElement | null) => {
+          if (item) {
+            return item.getBoundingClientRect().width + 40;
+          }
+        })
+        .reduce((a: number, b: number) => {
+          return a + b;
+        }, 0);
+      this.setState({
+        width: width
+      });
+      TweenLite.to(this.containerRef.current, {
+        x: -width,
+        duration: 30,
+        repeat: -1,
+        ease: Linear.easeNone
+      });
     });
   }
 }
