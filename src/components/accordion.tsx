@@ -1,10 +1,16 @@
 import React from "react";
 import classNames from "classnames";
 import "./accordion.scss";
+import Icon from "../images/icon-plus.inline.svg";
 
 export interface AccordionMessage {
   title: string;
   body: JSX.Element;
+}
+
+interface AccordionItemEl {
+  maxHeight?: string;
+  title: string;
 }
 
 interface Props {
@@ -13,13 +19,24 @@ interface Props {
 
 interface State {
   currentIndex?: number;
+  elements?: AccordionItemEl[];
 }
 
 export default class Accordion extends React.Component<Props, State> {
+  refsArray: (HTMLDivElement | null)[];
   constructor(props: Props) {
     super(props);
-    this.state = {};
+    this.refsArray = [];
+    let arr = props.messages.map(item => {
+      return {
+        title: item.title
+      };
+    });
+    this.state = {
+      elements: arr
+    };
     this.toggleIndex = this.toggleIndex.bind(this);
+    this.setElementHeights = this.setElementHeights.bind(this);
   }
   render() {
     const messages = this.props.messages.map((message, i) => {
@@ -38,20 +55,56 @@ export default class Accordion extends React.Component<Props, State> {
           onClick={() => {
             this.toggleIndex(i);
           }}
+          key={`accordion-item-${i}`}
         >
           <div>
             <h4 className="accordion__title">{message.title}</h4>
-            <div className="accordion__body">{message.body}</div>
+            <div
+              className="accordion__body"
+              ref={ref => {
+                this.refsArray[i] = ref;
+              }}
+            >
+              {message.body}
+            </div>
+          </div>
+          <div className="accordion__icon">
+            <Icon />
           </div>
         </button>
       );
     });
     return <div className="accordion">{messages}</div>;
   }
+  componentDidMount() {
+    this.setElementHeights();
+  }
+  setElementHeights() {
+    this.refsArray.forEach((ref, i) => {
+      if (!ref || !this.state.elements) return;
+      const height = ref.getBoundingClientRect().height;
+      const elements = this.state.elements;
+      const updatedElements = [...elements];
+      ref.style.maxHeight = "0px";
+      updatedElements[i].maxHeight = `${height}px`;
+      this.setState({
+        ...this.state,
+        elements: {
+          ...updatedElements
+        }
+      });
+    });
+  }
   toggleIndex(index: number) {
+    this.refsArray.forEach(ref => {
+      ref!.style.maxHeight = "0px";
+    });
     if (this.state.currentIndex === index) {
       this.setState({ currentIndex: undefined });
     } else {
+      this.refsArray[index]!.style.maxHeight = this.state.elements![
+        index
+      ].maxHeight!;
       this.setState({ currentIndex: index });
     }
   }
