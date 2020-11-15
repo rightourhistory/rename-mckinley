@@ -35,7 +35,7 @@ const accordionMessages: AccordionMessage[] = [
           296). This guiding light of Manifest Destiny McKinley spoke of “is the
           idea that the United States is destined--by God, its advocates
           believed--to expand its dominion and spread democracy and capitalism
-          across the entire North American Continent” (www.history.com).
+          across the entire North American Continent”.
         </p>
         <p>
           For McKinley’s selfish interests, it was imperative that Manifest
@@ -86,7 +86,7 @@ const accordionMessages: AccordionMessage[] = [
   }
 ];
 
-export class FiveReasons extends React.Component {
+export default class FiveReasons extends React.Component {
   render() {
     return (
       <div className="five-reasons">

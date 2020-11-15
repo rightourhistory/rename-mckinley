@@ -6,7 +6,7 @@ import { Head, HeadPosition } from "../components/head";
 import Splash from "./home/components/splash";
 import "./index.scss";
 import Footer from "../components/footer";
-import { FiveReasons } from "./home/components/five-reasons";
+import FiveReasons from "./home/components/five-reasons";
 
 interface State {
   headPosition: HeadPosition;
