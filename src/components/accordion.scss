@@ -13,11 +13,6 @@
     border: var(--text-color--dark-primary) 1rem solid;
     border-bottom: 0;
     background: var(--background-color--white);
-    color: inherit;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    text-align: inherit;
     transition: background ease-out 150ms;
     &:before {
       content: "0" counter(accordion) ".";
@@ -37,6 +32,7 @@
     max-width: 76rem;
     line-height: 120%;
     color: var(--text-color--dark-primary);
+    cursor: pointer;
   }
   &__body {
     display: block;
@@ -57,6 +53,16 @@
   &__icon {
     padding-top: 1.25rem;
     width: 5.2rem;
+    height: 5.2rem;
+    align-self: flex-start;
+    color: inherit; //button reset
+    font: inherit; //button reset
+    cursor: pointer; //button reset
+    outline: inherit; //button reset
+    text-align: inherit; //button reset
+    background: none; //button reset
+    border: 0; //button reset
+    padding: 0; //button reset
     svg {
       width: 100%;
       height: auto;

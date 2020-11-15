@@ -48,17 +48,21 @@ export default class Accordion extends React.Component<Props, State> {
         shouldOpen = true;
       }
       return (
-        <button
+        <div
           className={classNames("accordion__item", {
             "accordion__item--open": shouldOpen
           })}
-          onClick={() => {
-            this.toggleIndex(i);
-          }}
           key={`accordion-item-${i}`}
         >
           <div>
-            <h4 className="accordion__title">{message.title}</h4>
+            <h4
+              className="accordion__title"
+              onClick={() => {
+                this.toggleIndex(i);
+              }}
+            >
+              {message.title}
+            </h4>
             <div
               className="accordion__body"
               ref={ref => {
@@ -68,10 +72,15 @@ export default class Accordion extends React.Component<Props, State> {
               {message.body}
             </div>
           </div>
-          <div className="accordion__icon">
+          <button
+            className="accordion__icon"
+            onClick={() => {
+              this.toggleIndex(i);
+            }}
+          >
             <Icon />
-          </div>
-        </button>
+          </button>
+        </div>
       );
     });
     return <div className="accordion">{messages}</div>;
