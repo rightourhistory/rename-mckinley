@@ -2,7 +2,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 900;
 
   &--left {
     position: fixed;
@@ -12,13 +11,15 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
-    transform-origin: top left;
+    transform: translateX(-50%) scale(1.25);
+    transform-origin: top center;
+    z-index: 120;
 
     .head--left & {
       top: 0;
       left: 2rem;
-      transform: scale(0.6) translateX(-25%);
+      transform-origin: top left;
+      transform: scale(0.45) translateX(-50%);
     }
   }
 
