@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import "./head.scss";
 import head from "../images/mckinley-portrait-pukas.png";
+import { throttle } from "../helpers";
 
 export enum HeadPosition {
   Centered = "centered",
@@ -41,12 +42,14 @@ export class Head extends React.Component<Props> {
   }
   componentDidMount() {
     if (document) {
-      document.body.addEventListener("mousemove", event => {
+      const updateEyePosition = throttle((event: any) => {
         this.updateEyePosition(event);
-      });
+      }, 75);
+      document.body.addEventListener("mousemove", updateEyePosition);
     }
   }
   updateEyePosition(event: MouseEvent) {
+    console.log("howmany");
     [this.eyeLeftRef.current, this.eyeRightRef.current].forEach(eye => {
       if (eye) {
         let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
