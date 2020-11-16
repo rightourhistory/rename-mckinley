@@ -13,6 +13,7 @@ export default class Splash extends React.Component {
             Sign the Petition
           </a>
         </div>
+        {this.props.children}
       </div>
     );
   }

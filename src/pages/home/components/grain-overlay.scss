@@ -1,0 +1,46 @@
+@keyframes grain {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  30% {
+    transform: translate(3%, 15%);
+  }
+  50% {
+    transform: translate(12%, 11%);
+  }
+  70% {
+    transform: translate(-5%, -10%);
+  }
+  90% {
+    transform: translate(-10%, 7%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.grain-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 500;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    left: -50%;
+    top: -50%;
+    background-image: url(../../../images/grain.png);
+    background-size: 150px 150px;
+    animation: grain 1.5s steps(3) infinite;
+    opacity: 0.25;
+  }
+}
