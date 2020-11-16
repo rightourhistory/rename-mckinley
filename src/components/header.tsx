@@ -32,6 +32,13 @@ export default class Header extends React.Component<Props, State> {
           <div className="header__logo">
             <Logo aria-label="logo" />
           </div>
+          <a
+            className="header__cta"
+            href="https://sign.moveon.org/petitions/restore-original-name"
+            target="_blank"
+          >
+            Take Action
+          </a>
         </div>
         <div
           className="splash-bottom-observable"

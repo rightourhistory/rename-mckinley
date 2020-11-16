@@ -2,6 +2,10 @@ import React from "react";
 import Marquee, { MarqueeMessage } from "../../../components/marquee";
 import "./intro.scss";
 import SourceLink from "../../../components/source-link";
+import AnnexationCeremoney from "../../../images/annexation-ceremony-black.jpg";
+import AnnexationClub from "../../../images/annexation-club-black.jpg";
+import AnnexationMilitary from "../../../images/annexation-military-black.jpg";
+import GrainOverlay from "./grain-overlay";
 
 export default class Intro extends React.Component {
   render() {
@@ -73,7 +77,15 @@ class IntroAssociation extends React.Component {
         </div>
         <div className="intro-association__container">
           <div className="intro-association__column intro-association__column--1">
-            <img src="https://via.placeholder.com/280x260.png/AC1D11/AC1D11" />
+            <div
+              className="intro-association__image"
+              style={{
+                width: "320px"
+              }}
+            >
+              <GrainOverlay dark />
+              <img src={AnnexationCeremoney} style={{ width: "320px" }} />
+            </div>
             <p>
               Well, let’s just say <s>William McKinley</s>’s association with
               the community of Hawai‘i has a less than positive history.
@@ -83,11 +95,30 @@ class IntroAssociation extends React.Component {
               illegally* annexed the kingdom for its natural resources and
               strategic military location.
             </p>
-            <img src="https://via.placeholder.com/400x400.png/AC1D11/AC1D11" />
+            <div
+              className="intro-association__image"
+              style={{
+                width: "420px"
+              }}
+            >
+              <GrainOverlay dark />
+              <img src={AnnexationMilitary} style={{ width: "420px" }} />
+            </div>
           </div>
           <div className="intro-association__column intro-association__column--2">
-            <img src="https://via.placeholder.com/480x320.png/AC1D11/AC1D11" />
-            <img src="https://via.placeholder.com/280x260.png/AC1D11/AC1D11" />
+            <div className="intro-association__image">
+              <GrainOverlay dark />
+              <img src="https://via.placeholder.com/480x320.png/AC1D11/AC1D11" />
+            </div>
+            <div
+              className="intro-association__image"
+              style={{
+                width: "360px"
+              }}
+            >
+              <GrainOverlay dark />
+              <img src={AnnexationClub} style={{ width: "360px" }} />
+            </div>
             <p>
               The native Alaskan community and its allies fought for a similar
               naming resolution with Mount <s>McKinley</s> for decades.

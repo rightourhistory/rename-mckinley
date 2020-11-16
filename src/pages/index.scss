@@ -1,7 +1,10 @@
 @import "~sanitize.css";
 
+$color--accent: #c83a22;
+
 html {
   --color--accent: #c83a22;
+  --color--accent-medium: #b3260d;
   --color--accent-dark: #702415;
   --color--nearblack: #090909;
   --color--warmwhite: #e2e0e0;

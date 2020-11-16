@@ -1,13 +1,30 @@
 .header {
   position: fixed;
-  padding: 2rem;
   z-index: 10000;
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
   &__logo {
     display: inline-block;
     height: auto;
-    width: 16rem;
+    width: 18rem;
     fill: var(--text-color--dark-primary);
+  }
+  &__cta {
+    letter-spacing: 0.15rem;
+    font-size: 1.6rem;
+    align-self: center;
+    background: var(--color--accent);
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    color: var(--color--warmwhite);
+    transition: background ease-in-out 80ms;
+    border: 0.2rem solid #bf3820;
+    &:hover {
+      background: var(--color--accent-medium);
+    }
   }
 }
 

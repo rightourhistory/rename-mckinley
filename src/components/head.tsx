@@ -49,7 +49,6 @@ export class Head extends React.Component<Props> {
     }
   }
   updateEyePosition(event: MouseEvent) {
-    console.log("howmany");
     [this.eyeLeftRef.current, this.eyeRightRef.current].forEach(eye => {
       if (eye) {
         let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
@@ -59,7 +58,7 @@ export class Head extends React.Component<Props> {
           window.scrollY;
         let radian = Math.atan2(event.pageX - x, event.pageY - y);
         let rot = radian * (180 / Math.PI) * -1 + 270;
-        eye.style.transform = `rotate(${rot}deg)`;
+        eye.style.transform = `rotate(${rot}deg) translate3d(0, 0, 0)`;
       }
     });
   }

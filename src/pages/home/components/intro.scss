@@ -77,13 +77,8 @@
         left: 0;
       }
     }
-    img {
-      &:first-of-type {
-        transform: translateX(5rem);
-      }
-    }
     &--1 {
-      img {
+      .intro-association__image {
         align-self: flex-end;
       }
       s:after {
@@ -113,19 +108,20 @@
           background-repeat: no-repeat;
         }
       }
-      img {
+      .intro-association__image {
+        z-index: 110;
         align-self: flex-start;
         margin-bottom: 8rem;
-        padding-top: 5rem;
-        &:first-of-type {
-          position: relative;
-          z-index: 110;
-        }
+        margin-top: 5rem;
         &:last-of-type {
-          padding-top: 0;
+          margin-top: 0;
           margin-bottom: 0;
         }
       }
     }
+  }
+  &__image {
+    position: relative;
+    overflow: hidden;
   }
 }
