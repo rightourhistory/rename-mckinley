@@ -68,18 +68,21 @@
       height: auto;
       transition: transform ease-out 150ms;
       transform-origin: center center;
+      .accordion__item:hover & {
+        transform: scale(0.9);
+      }
       path {
         transition: all ease-out 150ms;
         transform-origin: center center;
         fill: var(--text-color--accent);
       }
       [class*="open"] & {
-        transform: rotate(180deg);
+        transform: rotate(-180deg) scale(0.9) !important;
         path {
           fill: var(--text-color--dark-primary);
         }
         path:first-of-type {
-          transform: rotate(-90deg);
+          transform: rotate(90deg);
         }
       }
     }
