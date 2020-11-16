@@ -13,7 +13,10 @@
     margin: 0 auto;
   }
   &__title {
-    font-size: 7.2rem;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    font-size: 6.4rem;
     max-width: 76rem;
     font-weight: 900;
     text-align: right;
@@ -22,6 +25,9 @@
       font-weight: inherit;
       color: var(--text-color--dark-primary);
     }
+  }
+  &__accordion {
+    min-width: 50%;
   }
   &__blockquote {
     font-family: var(--text-font--script);
