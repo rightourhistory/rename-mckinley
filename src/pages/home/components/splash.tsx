@@ -32,13 +32,11 @@ export default class Splash extends React.Component {
     let scrollTrigger = {
       trigger: ".splash-headline--2",
       start: "center center",
-      end: "center -400px",
+      end: "center top",
       scrub: true
     };
     gsap.to(headlineText, {
       scrollTrigger: scrollTrigger,
-      x: -300,
-      color: "#ced3cd",
       opacity: 0,
       ease: "none",
       duration: 1

@@ -14,13 +14,14 @@
   }
   &__title {
     position: sticky;
-    top: 0;
+    top: 15rem;
     align-self: flex-start;
     font-size: 6.4rem;
     max-width: 76rem;
     font-weight: 900;
     text-align: right;
     margin: 2rem 4rem 0 0;
+    padding: 4rem 0;
     strong {
       font-weight: inherit;
       color: var(--text-color--dark-primary);
