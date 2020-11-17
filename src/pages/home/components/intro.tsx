@@ -4,7 +4,7 @@ import "./intro.scss";
 import SourceLink from "../../../components/source-link";
 import AnnexationCeremoney from "../../../images/annexation-ceremony-black.jpg";
 import AnnexationClub from "../../../images/annexation-club-black.jpg";
-import AnnexationMilitary from "../../../images/annexation-military-black.jpg";
+import AnnexationMarines from "../../../images/annexation-marines-landing.jpg";
 import GrainOverlay from "./grain-overlay";
 
 export default class Intro extends React.Component {
@@ -102,7 +102,7 @@ class IntroAssociation extends React.Component {
               }}
             >
               <GrainOverlay dark />
-              <img src={AnnexationMilitary} style={{ width: "420px" }} />
+              <img src={AnnexationMarines} style={{ width: "420px" }} />
             </div>
           </div>
           <div className="intro-association__column intro-association__column--2">
@@ -124,7 +124,7 @@ class IntroAssociation extends React.Component {
               naming resolution with Mount <s>McKinley</s> for decades.
             </p>
             <p>After over 100 years, they succeeded*.</p>
-            <p>It is now Hawai‘i’s turn! Eo!</p>
+            <p>It is now Hawai‘i’s turn! Eō!</p>
           </div>
         </div>
       </div>
