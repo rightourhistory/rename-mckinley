@@ -43,9 +43,9 @@ export default class Splash extends React.Component {
               High School
             </span>
           </h1>
-          {/* <a className="splash__cta" href="#">
-            Sign the Petition
-          </a> */}
+          <div className="splash__bottom-image">
+            <img src="https://picsum.photos/800/400" />
+          </div>
         </div>
         {this.props.children}
       </div>

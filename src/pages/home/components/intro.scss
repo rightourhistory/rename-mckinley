@@ -1,17 +1,31 @@
+@import "../../../mixins.scss";
+
 .intro {
-  padding: 16rem 0;
+  padding: 8rem 0;
   background-image: url(../../../images/topo.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--background-color--accent);
+
+  @include mq(small) {
+    padding: 16rem 0;
+  }
+  @include mq(medium) {
+    padding-top: 24rem;
+  }
 }
 
 .intro-policy {
   max-width: 160rem;
   margin: 8rem auto 0;
-  padding: 0 8rem;
+  padding: 0 2rem;
   color: var(--text-color--light-red);
+
+  @include mq(small) {
+    padding: 0 8rem;
+  }
+
   &__text {
     font-size: 2.4rem;
     font-weight: 400;
