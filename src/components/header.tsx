@@ -10,14 +10,14 @@ interface Props {
 }
 
 interface State {
-  scrolledPastSplash?: boolean;
+  scrolledDown?: boolean;
 }
 
 export default class Header extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      scrolledPastSplash: false
+      scrolledDown: false
     };
   }
   render() {
@@ -25,7 +25,7 @@ export default class Header extends React.Component<Props, State> {
       <>
         <div
           className={classNames("header", {
-            "header--slide-in": this.state.scrolledPastSplash
+            "header--full": this.state.scrolledDown
           })}
           id="header"
         >
@@ -55,10 +55,10 @@ export default class Header extends React.Component<Props, State> {
       let splashObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            this.setState({ scrolledPastSplash: false });
+            this.setState({ scrolledDown: false });
             this.props.onToggleHeader(HeadPosition.Left);
           } else {
-            this.setState({ scrolledPastSplash: true });
+            this.setState({ scrolledDown: true });
             this.props.onToggleHeader(HeadPosition.Centered);
           }
         });
