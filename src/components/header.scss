@@ -32,8 +32,8 @@
   &__base {
     fill: rgba(#fff, 0);
     transition: fill 250ms ease-out;
-    .header--slide-in & {
-      fill: var(--text-color--light-primary);
+    .header--full & {
+      fill: var(--background-color--white);
     }
   }
 }
