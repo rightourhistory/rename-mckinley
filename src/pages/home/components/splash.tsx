@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { throttle } from "../../../helpers";
 import GrainOverlay from "./grain-overlay";
+import McKinleyStatue from "../../../images/photo-mckinley-statue.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 export default class Splash extends React.Component {
@@ -45,7 +46,7 @@ export default class Splash extends React.Component {
             </span>
           </h1>
           <div className="splash__bottom-image">
-            <img src="https://picsum.photos/800/400" />
+            <img src={McKinleyStatue} />
           </div>
         </div>
         <GrainOverlay />

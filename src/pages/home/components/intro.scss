@@ -122,6 +122,9 @@
           background-repeat: no-repeat;
         }
       }
+      p {
+        max-width: 46rem;
+      }
       .intro-association__image {
         z-index: 110;
         align-self: flex-start;

@@ -108,7 +108,14 @@ class IntroAssociation extends React.Component {
           <div className="intro-association__column intro-association__column--2">
             <div className="intro-association__image">
               <GrainOverlay dark />
-              <img src="https://via.placeholder.com/480x320.png/AC1D11/AC1D11" />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/gX7Vln312bc"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
             <div
               className="intro-association__image"
