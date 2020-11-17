@@ -63,7 +63,7 @@ export default class Splash extends React.Component {
     if (!headlineText) return;
     let scrollTrigger = {
       trigger: ".splash-headline--2",
-      start: "center center",
+      start: `center ${headlineText.getBoundingClientRect().top}px`,
       end: "center top",
       scrub: true
     };
