@@ -7,7 +7,6 @@ import Splash from "./home/components/splash";
 import "./index.scss";
 import Footer from "../components/footer";
 import FiveReasons from "./home/components/five-reasons";
-import GrainOverlay from "./home/components/grain-overlay";
 
 interface State {
   headPosition: HeadPosition;
@@ -26,9 +25,7 @@ export default class Home extends React.Component<{}, State> {
       <main className="main">
         <Header onToggleHeader={this.toggleHeadPosition} />
         <Head position={this.state.headPosition} />
-        <Splash>
-          <GrainOverlay />
-        </Splash>
+        <Splash />
         <Intro />
         <FiveReasons />
         <HistoryGroup />
