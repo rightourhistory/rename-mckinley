@@ -2,7 +2,6 @@ import React from "react";
 import "./history-group.scss";
 import HonoluluRifles from "../../../images/red-honolulu-rifles.jpg";
 import Kalakaua from "../../../images/kalakaua.jpg";
-import PearlHarbor from "../../../images/pearl-harbor.jpg";
 import PlantationWorkers from "../../../images/plantation-workers.jpg";
 
 export default class HistoryGroup extends React.Component {
@@ -84,7 +83,12 @@ export default class HistoryGroup extends React.Component {
           </div>
           <div className="history-group-text-block">
             <div className="history-group-text-block__text history-group-text-block__text--script">
-              <p>“A day of infamy in Hawaiian history.”</p>
+              <p>&ldquo;A day of infamy in Hawaiian history.&rdquo;</p>
+            </div>
+          </div>
+          <div className="history-group-text-block">
+            <div className="history-group-text-block__text history-group-text-block__text--centered">
+              <p>TO BE CONTINUED...</p>
             </div>
           </div>
         </div>

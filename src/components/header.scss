@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  pointer-events: none;
   &__logo {
     display: inline-block;
     height: auto;
@@ -22,6 +23,7 @@
     color: var(--color--warmwhite);
     transition: background ease-in-out 80ms;
     border: 0.2rem solid #bf3820;
+    pointer-events: initial;
     &:hover {
       background: var(--color--accent-medium);
     }

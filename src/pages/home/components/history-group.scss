@@ -84,6 +84,11 @@
       min-width: 24rem;
     }
 
+    &--centered {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
     strong {
       color: var(--text-color--accent);
     }

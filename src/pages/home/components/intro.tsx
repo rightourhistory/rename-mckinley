@@ -134,15 +134,14 @@ class IntroAssociation extends React.Component {
           <div className="intro-association__column intro-association__column--2">
             <div className="intro-association__image">
               <GrainOverlay dark />
-              {/* TODO: uncomment */}
-              {/* <iframe
+              <iframe
                 width="560"
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/gX7Vln312bc"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe> */}
+              ></iframe>
             </div>
             <div
               className="intro-association__image"
@@ -176,6 +175,12 @@ class IntroAssociation extends React.Component {
                 size={SourceLinkSize.Small}
               >
                 City of Arcata
+              </SourceLink>
+              <SourceLink
+                href="http://hdl.handle.net/10125/37601"
+                size={SourceLinkSize.Small}
+              >
+                William S. Richard School of Law
               </SourceLink>
             </div>
           </div>
