@@ -1,6 +1,9 @@
 .marquee {
   height: 100%;
   white-space: nowrap;
+  &__svgs {
+    height: 100%;
+  }
   svg {
     display: inline-block;
     height: 100%;

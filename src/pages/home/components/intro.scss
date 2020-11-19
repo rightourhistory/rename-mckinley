@@ -43,7 +43,7 @@
   &__subtext {
     color: var(--text-color--light-red);
     font-size: 2.4rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -102,28 +102,38 @@
     }
     &--2 {
       s {
-        &:before {
-          content: "Denali";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 110%;
-          transform: translateY(80%) translateX(-5%) rotate(-10deg);
-          color: var(--text-color--light-primary);
-          font-family: var(--text-font--script);
-          font-size: 4rem;
-          font-weight: 700;
+        &[data-text] {
+          &:before {
+            content: attr(data-text);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform-origin: center center;
+            transform: translateY(80%) translateX(-50%) rotate(-10deg);
+            color: var(--text-color--light-primary);
+            font-family: var(--text-font--script);
+            font-size: 2.2rem;
+            font-weight: 700;
+            white-space: nowrap;
+          }
+          &:after {
+            height: 0;
+            padding-bottom: 44.3%;
+            background-color: none !important;
+            background-image: url(../../../images/strike.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
         }
-        &:after {
-          height: 0;
-          padding-bottom: 44.3%;
-          background-image: url(../../../images/strike.svg);
-          background-position: center center;
-          background-repeat: no-repeat;
+        &:not([data-text]) {
+          &:after {
+            height: 0.6rem;
+            background-color: var(--text-color--dark-primary);
+          }
         }
       }
       p {
-        max-width: 46rem;
+        max-width: 48rem;
       }
       .intro-association__image {
         z-index: 110;
