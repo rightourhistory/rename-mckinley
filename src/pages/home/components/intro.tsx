@@ -157,10 +157,10 @@ class IntroAssociation extends React.Component {
               renamed Mount <s data-text="Denali">McKinley</s>.
             </p>
             <p>
-              Then, in 2018, the city of Arcata in Humboldt county removed its{" "}
+              Then, in 2018, the city of Arcata in Humboldt County removed its{" "}
               <s>McKinley</s> statue due to his actions that &ldquo;devastated
               the lives, cultures, and self-determination of Indigenous Peoples
-              of the Pacific&rdquo;.
+              of the Pacific.&rdquo;
             </p>
             <p>It is now Hawai‘i’s turn. Eō!</p>
             <div>

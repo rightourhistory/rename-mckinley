@@ -31,7 +31,7 @@ const accordionMessages: AccordionMessage[] = [
           ʻĀina gathered 21. 269 Native Hawaiian signatures on a 556-paged
           petition named, &ldquo;Petition Against Annexation.&rdquo; With Queen
           Liliʻuokalani, four delegates met with Senator George Hoar, &ldquo;who
-          read the petition to the Senate [and] it was formally accepted&rdquo;.
+          read the petition to the Senate [and] it was formally accepted.&rdquo;
           Ultimately, the proposed treaty to annex Hawaiʻi was unsuccessful in
           the Senate.
         </p>
@@ -42,7 +42,7 @@ const accordionMessages: AccordionMessage[] = [
     )
   },
   {
-    title: "&ldquo;Treaty of Annexation&rdquo; 1898",
+    title: <>&ldquo;Treaty of Annexation&rdquo; 1898</>,
     body: (
       <>
         <p>
@@ -55,7 +55,7 @@ const accordionMessages: AccordionMessage[] = [
           This guiding light of Manifest Destiny McKinley spoke of &ldquo;is the
           idea that the United States is destined--by God, its advocates
           believed--to expand its dominion and spread democracy and capitalism
-          across the entire North American Continent&rdquo;.
+          across the entire North American Continent.&rdquo;
         </p>
         <p>
           For McKinley’s selfish interests, it was imperative that Manifest
@@ -140,9 +140,12 @@ const accordionMessages: AccordionMessage[] = [
         </p>
         <p>
           This illegal annexation helped displace Native Hawaiians in their
-          homeland physically, mentally, emotionally, and spiritually. In 1911,
-          a bronze, eight-ton &ldquo;statue of President McKinley was
-          commissioned for $8,000&rdquo; and dedicated to the school.
+          homeland physically, mentally, emotionally, and spiritually.
+        </p>
+        <p>
+          To commemorate this man, in 1911, a bronze, eight-ton &ldquo;statue of
+          President McKinley was commissioned for $8,000&rdquo; and dedicated to
+          the school.
         </p>
         <SourceLink href="http://www.mhs150years.com">
           McKinley High School

@@ -4,13 +4,13 @@ import "./accordion.scss";
 import Icon from "../images/icon-plus.inline.svg";
 
 export interface AccordionMessage {
-  title: string;
+  title: string | JSX.Element;
   body: JSX.Element;
 }
 
 interface AccordionItemEl {
   maxHeight?: string;
-  title: string;
+  title: string | JSX.Element;
 }
 
 interface Props {
