@@ -118,12 +118,10 @@ const accordionMessages: AccordionMessage[] = [
           When you enter into class, you and your classmates stand alongside
           your desks, and in unison, everyone recites the following salutation:
         </p>
-        <p>
-          <blockquote>
-            &ldquo;We give our heads and our hearts to God and our Country! One
-            Country! One language! One Flag!&rdquo;
-          </blockquote>
-        </p>
+        <blockquote>
+          &ldquo;We give our heads and our hearts to God and our Country! One
+          Country! One language! One Flag!&rdquo;
+        </blockquote>
       </>
     )
   },

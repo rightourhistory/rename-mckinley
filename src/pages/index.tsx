@@ -7,6 +7,7 @@ import Splash from "./home/components/splash";
 import "./index.scss";
 import Footer from "../components/footer";
 import FiveReasons from "./home/components/five-reasons";
+import RequestLetter from "./home/components/request-letter";
 
 interface State {
   headPosition: HeadPosition;
@@ -28,7 +29,8 @@ export default class Home extends React.Component<{}, State> {
         <Splash />
         <Intro />
         <FiveReasons />
-        <HistoryGroup />
+        <RequestLetter />
+        {/* <HistoryGroup /> */}
       </main>
     );
   }

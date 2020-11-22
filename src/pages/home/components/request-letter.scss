@@ -1,0 +1,217 @@
+.request-letter {
+  padding: 8rem 4rem 0;
+  background: var(--background-color--dark);
+  color: var(--text-color--light-primary);
+
+  &__eyebrow {
+    max-width: 124rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    * {
+      margin: 0;
+      max-width: 64rem;
+    }
+    :first-child {
+      font-size: 1.8rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+    :last-child {
+      font-size: 4.8rem;
+      line-height: 120%;
+    }
+  }
+  &__body {
+    position: relative;
+    max-width: 104rem;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    line-height: 150%;
+    background: var(--background-color--white);
+    color: var(--text-color--dark-primary);
+    transition: background ease-out 150ms;
+
+    .request-letter--folded & {
+      background: var(--background-color--base);
+    }
+
+    &__fold {
+      color: inherit; //button reset
+      font: inherit; //button reset
+      cursor: pointer; //button reset
+      outline: inherit; //button reset
+      text-align: inherit; //button reset
+      background: none; //button reset
+      border: 0; //button reset
+      padding: 0; //button reset
+      .request-letter--folded & {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: -4rem;
+        right: 0;
+        bottom: 0;
+        background-color: var(--background-color--white);
+        width: 100%;
+        height: calc(100% - 20rem);
+        z-index: 100;
+      }
+      svg {
+        &.svg--icon-down {
+          padding: 0 0.5rem 1rem 0.5rem;
+          width: 4rem;
+          border-radius: 0 0 2rem 2rem;
+          transition: background ease-out 150ms;
+          path {
+            transition: fill ease-out 150ms;
+            fill: var(--color--accent);
+          }
+        }
+        &.svg--corner {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          height: 20rem;
+          &:first-of-type {
+            left: 0;
+            path {
+              fill: var(--background-color--dark);
+            }
+          }
+          &:last-of-type {
+            right: 0;
+            transform: translateX(4rem);
+            path {
+              fill: var(--background-color--white);
+            }
+          }
+        }
+      }
+      span {
+        display: block;
+        font-size: 1.4rem;
+        color: var(--color--gray-dark);
+        letter-spacing: 0.2rem;
+        padding: 0 1rem;
+        transition: all 150ms ease-out;
+        border-radius: 2rem;
+      }
+      &:hover {
+        svg {
+          &.svg--icon-down {
+            background: var(--color--accent);
+            path {
+              fill: var(--color--white);
+            }
+          }
+        }
+        span {
+          opacity: 1;
+          color: var(--color--white);
+          background: var(--color--accent);
+        }
+      }
+    }
+    &:after {
+      .request-letter--folded & {
+        content: "";
+        position: absolute;
+        left: -2rem;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(#090909, 0.1);
+        width: 100%;
+        height: calc(100% - 18rem);
+      }
+    }
+  }
+  &__cta {
+    padding: 4rem 0 8rem;
+    text-align: center;
+    color: var(--text-color--light-primary);
+    h4 {
+      margin: 0 0 1rem;
+    }
+    a {
+      display: inline-block;
+      background: var(--background-color--accent);
+      color: var(--text-color--light-primary);
+      font-size: 3.2rem;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      &:hover {
+        background: var(--color--accent-medium);
+      }
+    }
+  }
+}
+
+.request-letter-body {
+  padding: 8rem 4rem;
+  transition: padding ease-out 150ms;
+
+  .request-letter--folded & {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-height: 40rem;
+    overflow: hidden;
+  }
+  &__header {
+    font-size: 1.6rem;
+    h4,
+    address {
+      margin: 0;
+      padding: 0;
+      font-size: inherit;
+      font-weight: 400;
+      line-height: 1.5;
+      font-style: initial;
+    }
+    time {
+      display: block;
+      margin-bottom: 0rem;
+    }
+  }
+  &__main {
+    blockquote {
+      margin: 0 0 0 1rem;
+      padding: 0 0 0 3rem;
+      border-left: 0.5rem solid var(--color--gray);
+    }
+  }
+  &__footer {
+    h6 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin: 4rem 0 0;
+    }
+    .signature {
+      margin: 0 0 2rem;
+      font-size: 1.4rem;
+      line-height: 150%;
+      &::first-line {
+        color: var(--text-color--accent);
+        font-family: var(--text-font--script);
+        font-size: 2.4rem;
+      }
+      &--big {
+        font-size: 4.8rem;
+        line-height: 100%;
+        &::first-line {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+
+.cosignatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}

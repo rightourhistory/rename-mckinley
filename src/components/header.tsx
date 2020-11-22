@@ -37,7 +37,7 @@ export default class Header extends React.Component<Props, State> {
             href="https://sign.moveon.org/petitions/restore-original-name"
             target="_blank"
           >
-            Take Action
+            Sign the Petition
           </a>
         </div>
         <div
