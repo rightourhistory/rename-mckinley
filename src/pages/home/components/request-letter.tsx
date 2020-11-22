@@ -182,7 +182,10 @@ export default class RequestLetter extends React.Component<{}, State> {
             </main>
             <footer className="request-letter-body__footer">
               <p>Mahalo nui,</p>
-              <p className="signature signature--big">Aoloa Patao</p>
+              <p className="signature signature--big">
+                Aoloa Patao
+                <a href="mailto:aoloapatao@gmail.com">aoloapatao@gmail.com</a>
+              </p>
               <h6>Co-signed by:</h6>
               <div className="cosignatures">
                 <p className="signature">

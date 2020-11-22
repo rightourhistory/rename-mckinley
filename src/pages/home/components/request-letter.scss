@@ -194,6 +194,16 @@
       margin: 0 0 2rem;
       font-size: 1.4rem;
       line-height: 150%;
+      span {
+        display: block;
+        margin-top: 0.5rem;
+      }
+      a {
+        display: block;
+        font-size: 2rem;
+        color: var(--text-color--dark-primary);
+        text-decoration: none;
+      }
       &::first-line {
         color: var(--text-color--accent);
         font-family: var(--text-font--script);
