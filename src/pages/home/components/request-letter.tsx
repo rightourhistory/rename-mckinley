@@ -25,7 +25,13 @@ export default class RequestLetter extends React.Component<{}, State> {
       >
         <div className="request-letter__eyebrow">
           <h3>Request to the Board of Education</h3>
-          <h2>Our Letter to Superintendent Kishimoto</h2>
+          <h2>
+            Our Letter to
+            <br />
+            Superintendent
+            <br />
+            Dr. Kishimoto
+          </h2>
         </div>
         <article className="request-letter__body">
           {!this.state.expanded && (
