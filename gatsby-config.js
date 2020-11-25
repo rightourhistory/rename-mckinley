@@ -11,6 +11,7 @@ module.exports = {
     description: "A movement for the people of Hawai'i"
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-typescript",
     {

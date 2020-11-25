@@ -1,11 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../components/header";
-import HistoryGroup from "./home/components/history-group";
+// import HistoryGroup from "./home/components/history-group";
 import Intro from "./home/components/intro";
 import { Head, HeadPosition } from "../components/head";
 import Splash from "./home/components/splash";
 import "./index.scss";
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 import FiveReasons from "./home/components/five-reasons";
 import RequestLetter from "./home/components/request-letter";
 
@@ -23,15 +24,21 @@ export default class Home extends React.Component<{}, State> {
   }
   render() {
     return (
-      <main className="main">
-        <Header onToggleHeader={this.toggleHeadPosition} />
-        <Head position={this.state.headPosition} />
-        <Splash />
-        <Intro />
-        <FiveReasons />
-        <RequestLetter />
-        {/* <HistoryGroup /> */}
-      </main>
+      <>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Right Our History Hawaii</title>
+          <link rel="canonical" href="http://rightourhistoryhawaii.com" />
+        </Helmet>
+        <main className="main">
+          <Header onToggleHeader={this.toggleHeadPosition} />
+          <Head position={this.state.headPosition} />
+          <Splash />
+          <Intro />
+          <FiveReasons />
+          <RequestLetter />
+        </main>
+      </>
     );
   }
   toggleHeadPosition(position: HeadPosition) {

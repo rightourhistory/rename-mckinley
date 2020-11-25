@@ -6,6 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
@@ -16,8 +17,10 @@
   },
   "dependencies": {
     "@types/classnames": "^2.2.11",
+    "@types/react-helmet": "^6.1.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.24.79",
+    "gatsby-plugin-react-helmet": "^3.5.0",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.21",
     "gatsby-plugin-typescript": "^2.4.24",
@@ -26,12 +29,14 @@
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
     "sanitize.css": "^12.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "eslint": "^7.12.0",
+    "gh-pages": "^3.1.0",
     "prettier": "2.1.2",
     "typescript": "^4.0.3"
   },
