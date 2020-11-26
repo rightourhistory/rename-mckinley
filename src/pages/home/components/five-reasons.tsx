@@ -42,14 +42,14 @@ const accordionMessages: AccordionMessage[] = [
     )
   },
   {
-    title: <>&ldquo;Treaty of Annexation&rdquo; 1898</>,
+    title: <>&ldquo;Treaty of Annexation,&rdquo; 1898</>,
     body: (
       <>
         <p>
           In a private conversation with Assistant Secretary George Cortelyou,
           President William McKinley said, &ldquo;We need Hawaiʻi just as much
-          as a good deal more than we did California. It is Manifest Destiny
-          .&rdquo;
+          as a good deal more than we did California. It is Manifest
+          Destiny.&rdquo;
         </p>
         <p>
           This guiding light of Manifest Destiny McKinley spoke of &ldquo;is the
