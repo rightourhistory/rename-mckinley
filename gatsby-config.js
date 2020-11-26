@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: "http://rightourhistoryhawaii.com",
     description: "A movement for the people of Hawai'i"
   },
+  pathPrefix: `/rename-mckinley`,
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
