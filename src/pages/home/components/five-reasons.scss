@@ -1,27 +1,48 @@
+@import "../../../mixins.scss";
+
 .five-reasons {
-  padding: 16rem 2rem;
+  padding: 4rem 2rem;
   color: var(--text-color--dark-primary);
   background-image: url(../../../images/topo.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--background-color--white);
+  @include mq(medium) {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
   &__container {
     display: flex;
+    flex-direction: column;
     max-width: 180rem;
     width: 100%;
     margin: 0 auto;
+    @include mq(small) {
+      flex-direction: row;
+    }
   }
   &__title {
-    position: sticky;
-    top: 10rem;
     align-self: flex-start;
-    font-size: 6.4rem;
+    font-size: 4.4rem;
+    line-height: 125%;
     max-width: 76rem;
     font-weight: 900;
-    text-align: right;
-    margin: 2rem 4rem 0 0;
-    padding: 4rem 0;
+    text-align: center;
+
+    @include mq(small) {
+      text-align: right;
+      line-height: 150%;
+      margin: 2rem 4rem 0 0;
+      padding: 4rem 0;
+    }
+    @include mq(medium) {
+      position: sticky;
+      top: 10rem;
+      flex-direction: row;
+      font-size: 6.4rem;
+    }
+
     strong {
       font-weight: inherit;
       color: var(--text-color--dark-primary);

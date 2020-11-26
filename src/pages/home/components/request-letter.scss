@@ -1,7 +1,13 @@
+@import "../../../mixins.scss";
+
 .request-letter {
-  padding: 8rem 4rem 0;
+  padding: 8rem 2rem 0;
   background: var(--background-color--dark);
   color: var(--text-color--light-primary);
+  @include mq(small) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 
   &__eyebrow {
     max-width: 124rem;
@@ -13,25 +19,35 @@
       max-width: 64rem;
     }
     :first-child {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       letter-spacing: 0.2rem;
       margin-bottom: 0.5rem;
+      @include mq(medium) {
+        font-size: 1.8rem;
+      }
     }
     :last-child {
-      font-size: 4.8rem;
+      font-size: 2.4rem;
       line-height: 120%;
+      @include mq(medium) {
+        font-size: 4.8rem;
+      }
     }
   }
   &__body {
     position: relative;
     max-width: 104rem;
-    margin: 0 auto;
-    font-size: 2.4rem;
+    margin: 0 4rem;
+    font-size: 1.6rem;
     line-height: 150%;
     background: var(--background-color--white);
     color: var(--text-color--dark-primary);
     transition: background ease-out 150ms;
     cursor: pointer;
+    @include mq(medium) {
+      margin: 0 auto;
+      font-size: 2.4rem;
+    }
 
     .request-letter--folded & {
       transform: skew(-1deg);
@@ -64,8 +80,11 @@
         bottom: 0;
         background-color: var(--background-color--white);
         width: 100%;
-        height: calc(100% - 20rem);
+        height: calc(100% - 14rem);
         z-index: 100;
+        @include mq(medium) {
+          height: calc(100% - 20rem);
+        }
       }
       svg {
         &.svg--icon-down {
@@ -113,10 +132,13 @@
         bottom: 0;
         background-color: rgba(#090909, 0.1);
         width: 100%;
-        height: calc(100% - 17rem);
+        height: calc(100% - 12rem);
         transform: skew(7deg) scaleY(0.85);
         transform-origin: bottom right;
         transition: all 80ms ease-out 160ms;
+        @include mq(medium) {
+          height: calc(100% - 17rem);
+        }
       }
     }
     .request-letter--folded &:hover:after {
@@ -146,14 +168,20 @@
 }
 
 .request-letter-body {
-  padding: 8rem 4rem;
+  padding: 2rem;
   transition: padding ease-out 150ms;
+  @include mq(medium) {
+    padding: 8rem 4rem;
+  }
 
   .request-letter--folded & {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    max-height: 48rem;
+    padding-top: 2rem;
     overflow: hidden;
+    max-height: 32rem;
+    @include mq(medium) {
+      max-height: 48rem;
+      padding-top: 3rem;
+    }
   }
   &__header {
     font-size: 1.6rem;

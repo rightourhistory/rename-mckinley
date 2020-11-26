@@ -1,8 +1,12 @@
+@import "../mixins.scss";
+
 .accordion {
   counter-reset: accordion;
   list-style: none;
   padding: 0;
-  margin-top: 4rem;
+  @include mq(medium) {
+    margin-top: 4rem;
+  }
   &__item {
     counter-increment: accordion;
     position: relative;
@@ -27,12 +31,18 @@
   }
   &__title {
     display: flex;
-    font-size: 4.4rem;
+    font-size: 2.4rem;
     margin: 0;
-    max-width: 76rem;
+    padding-right: 6rem;
     line-height: 120%;
     color: var(--text-color--dark-primary);
     cursor: pointer;
+    @include mq(small) {
+      font-size: 3.2rem;
+    }
+    @include mq(medium) {
+      font-size: 4.4rem;
+    }
   }
   &__body {
     display: block;
