@@ -31,12 +31,16 @@
     background: var(--background-color--white);
     color: var(--text-color--dark-primary);
     transition: background ease-out 150ms;
+    cursor: pointer;
 
     .request-letter--folded & {
+      transform: skew(-1deg);
       background: var(--background-color--base);
     }
 
     &__fold {
+      transform: skew(10deg);
+      transform-origin: bottom right;
       color: inherit; //button reset
       font: inherit; //button reset
       cursor: pointer; //button reset
@@ -45,13 +49,17 @@
       background: none; //button reset
       border: 0; //button reset
       padding: 0; //button reset
+      transition: transform 80ms ease-out 160ms;
+      .request-letter__body:hover & {
+        transform: skew(15deg) scaleY(0.9);
+      }
       .request-letter--folded & {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         position: absolute;
-        left: -4rem;
+        left: 0;
         right: 0;
         bottom: 0;
         background-color: var(--background-color--white);
@@ -68,25 +76,6 @@
           path {
             transition: fill ease-out 150ms;
             fill: var(--color--accent);
-          }
-        }
-        &.svg--corner {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          height: 20rem;
-          &:first-of-type {
-            left: 0;
-            path {
-              fill: var(--background-color--dark);
-            }
-          }
-          &:last-of-type {
-            right: 0;
-            transform: translateX(4rem);
-            path {
-              fill: var(--background-color--white);
-            }
           }
         }
       }
@@ -119,13 +108,19 @@
       .request-letter--folded & {
         content: "";
         position: absolute;
-        left: -2rem;
+        left: 0;
         right: 0;
         bottom: 0;
         background-color: rgba(#090909, 0.1);
         width: 100%;
-        height: calc(100% - 18rem);
+        height: calc(100% - 17rem);
+        transform: skew(7deg) scaleY(0.85);
+        transform-origin: bottom right;
+        transition: all 80ms ease-out 160ms;
       }
+    }
+    .request-letter--folded &:hover:after {
+      transform: skew(9deg) scaleY(0.75);
     }
   }
   &__cta {
@@ -155,9 +150,9 @@
   transition: padding ease-out 150ms;
 
   .request-letter--folded & {
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
-    max-height: 40rem;
+    max-height: 48rem;
     overflow: hidden;
   }
   &__header {

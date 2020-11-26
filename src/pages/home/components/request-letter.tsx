@@ -2,7 +2,6 @@ import React from "react";
 import classNames from "classnames";
 import "./request-letter.scss";
 import DownSVG from "../../../images/icon-down.inline.svg";
-import Corner from "../../../images/corner.inline.svg";
 
 interface State {
   expanded?: boolean;
@@ -33,16 +32,14 @@ export default class RequestLetter extends React.Component<{}, State> {
             Dr. Kishimoto
           </h2>
         </div>
-        <article className="request-letter__body">
+        <article className="request-letter__body" onClick={this.toggleExpand}>
           {!this.state.expanded && (
             <button
               className="request-letter__body__fold"
               onClick={this.toggleExpand}
             >
-              <Corner />
-              <span>EXPAND</span>
+              <span>OPEN</span>
               <DownSVG />
-              <Corner />
             </button>
           )}
           <div className="request-letter-body">
