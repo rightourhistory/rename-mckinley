@@ -6,14 +6,21 @@ import PatrioticExercises from "../../../images/patriotic-exercises.jpg";
 
 const accordionMessages: AccordionMessage[] = [
   {
-    title: "The McKinley Tariff, 1890",
+    title: "The McKinley Tariff Produces Devious Insurgents, 1890",
     body: (
       <>
         <p>
-          When Willian McKinley substantially reduced the income of Hawaiʻi
-          sugar growers from $12.2M in 1890 to $7.0M in 1892, he effectively
-          goaded them into the 1893 overthrow of Queen Liliʻuokalani in order to
-          revive their profits through Annexation.
+          As a U.S. Congressman, McKinley sponsored and successfully passed a
+          bill enforcing a tariff on sugar imports which deliberately threatened
+          the sugar industry in the Hawaiian Kingdom.
+        </p>
+        <p>
+          This act, known as “The McKinley Tariff,” raised rates on imports and
+          substantially reduced the income of Hawaiʻi sugar growers from $12.2M
+          in 1890 to $7M in 1892. Essentially, McKinley effectively goaded a
+          group of sugar planters into becoming insurgents to overthrow Queen
+          Liliʻuokalani in order to establish a provisional government with the
+          ultimate goal of annexation to the United States.
         </p>
         <SourceLink href="https://history.house.gov/Historical-Highlights/1851-1900/The-McKinley-Tariff-of-1890/">
           Office of the Historian (U.S. Gov&rsquo;t)
@@ -22,18 +29,21 @@ const accordionMessages: AccordionMessage[] = [
     )
   },
   {
-    title: "Kūʻe Petitions & Queen Liliʻuokalani Official Protest, 1897",
+    title:
+      "Kūʻe Petitions & Queen Liliʻuokalani Patriotically Protest Annexation, 1897:",
     body: (
       <>
         <p>
-          When word spread that an adamant push for annexation of the Hawaiian
-          Kingdom by the U.S. was progressing, members of the Hui Hawaiʻi Aloha
-          ʻĀina gathered 21. 269 Native Hawaiian signatures on a 556-paged
-          petition named, &ldquo;Petition Against Annexation.&rdquo; With Queen
-          Liliʻuokalani, four delegates met with Senator George Hoar, &ldquo;who
-          read the petition to the Senate [and] it was formally accepted.&rdquo;
-          Ultimately, the proposed treaty to annex Hawaiʻi was unsuccessful in
-          the Senate.
+          The people’s love of their nation, land, and way of life were being
+          threatened by a potential annexation by the United States. Members of
+          the Hawaiian Patriotic League, called the Hui Hawaiʻi Aloha ʻĀina,
+          gathered 21,269 signatures on a 556-paged petition named, “Petition
+          Against Annexation.”
+        </p>
+        <p>
+          It represented 95% of the native adult population of Hawaiʻi at the
+          time. Names on the petition were also from loyal subjects of the
+          Hawaiian Kingdom, as well as foreign nationals.
         </p>
         <SourceLink href="https://www.archives.gov/education/lessons/hawaii-petition">
           Archives.gov
@@ -42,41 +52,30 @@ const accordionMessages: AccordionMessage[] = [
     )
   },
   {
-    title: <>&ldquo;Treaty of Annexation,&rdquo; 1898</>,
+    title: "The Fake Treaty of Annexation, 1898",
     body: (
       <>
         <p>
-          In a private conversation with Assistant Secretary George Cortelyou,
-          President William McKinley said, &ldquo;We need Hawaiʻi just as much
-          as a good deal more than we did California. It is Manifest
-          Destiny.&rdquo;
+          The U.S. took the Hawaiian Kingdom without permission or mutual
+          consent. <b>There still is no Treaty of Annexation</b> between the
+          Hawaiian Kingdom and the United States of America.
         </p>
         <p>
-          This guiding light of Manifest Destiny McKinley spoke of &ldquo;is the
-          idea that the United States is destined--by God, its advocates
-          believed--to expand its dominion and spread democracy and capitalism
-          across the entire North American Continent.&rdquo;
+          After two failed attempts to annex Hawaiʻi on June 16 and September 7
+          of 1897, President McKinley used The Newlands Resolution, a joint U.S.
+          Congressional action, to illegitimately claim U.S. annexation of the
+          Hawaiian Islands. A joint Resolution in the U.S. Congress is an
+          invalid document that has no power to allow the United States to annex
+          an internationally recognized country.
         </p>
         <p>
-          For McKinley’s selfish interests, it was imperative that Manifest
-          Destiny float across the Pacific Ocean, knowing very well that it
-          would deprive Hawaiʻi’s native people of their identity, language,
-          culture, health, land, and everything that makes a native people
-          native.
-        </p>
-        <p>
-          After two failed attempts to legally annex Hawaiʻi on June 16 and
-          September 7 of 1897, he settled for the illegal route: a joint
-          resolution, known as Newlands Resolution, which was signed on July 6,
-          1898. A joint resolution does not have the necessary power to annex an
-          internationally recognized country, which still to this day, Hawaiʻi
-          is.
-        </p>
-        <p>
-          As Senator Augustus O. Bacon, of Georgia said during the public Senate
-          debates of 1898, &ldquo;If Hawaiʻi could be acquired by a joint
-          resolution, then the Legislature of Hawaiʻi could acquire the United
-          States by a joint resolution of its own&rdquo; (Chang 80).
+          In actuality, the “annexation” was a bogus, diplomatic fraud between
+          the McKinley administration and the insurgents in Hawaiʻi who, with
+          the foreknowledge of the U.S. Minister to Hawaii (John Stevens) and
+          the assistance of the U.S. marines, successfully forced Queen
+          Liliʻuokalani to yield her Regency on January 16, 1893. McKinley’s
+          actions ultimately displaced Native Hawaiians in their
+          homeland--physically, mentally, emotionally, and spiritually.
         </p>
         <SourceLink href="https://books.google.com/books?id=vYF3AAAAMAAJ&pg=PA296&lpg=PA296">
           Morgan, H. Wayne.
@@ -91,7 +90,8 @@ const accordionMessages: AccordionMessage[] = [
     )
   },
   {
-    title: "Programme for Patriotic Exercises, 1906",
+    title:
+      "Programme for Patriotic Exercises Brainwashes Hawaiʻi Students, 1906",
     body: (
       <>
         <div
@@ -107,16 +107,20 @@ const accordionMessages: AccordionMessage[] = [
           <img src={PatrioticExercises} style={{ width: "100%" }} />
         </div>
         <p>
-          Jump into the time machine and imagine yourself a young student whose
-          parents, just nine years prior, signed their loyalty to the Hawaiian
-          Kingdom with their signature on the Kūʻe Petitions in opposition of
-          being annexed to the United States. Upon arriving at your public
-          school, you join a circle around a flagpole with the rest of your
-          classmates, cheering three times as the American flag is hoisted up.
+          Promoting President McKinley’s expansionist goals, the United States
+          replaced the public school curriculum of the Hawaiian Kingdom and also
+          introduced the Programme for Patriotic Exercises as a means of
+          systematic indoctrination for children to believe they were
+          “Americans.” In the philosophy of Manifest Destiny, the objectives of
+          this new propaganda were to systematically denationalize the citizens
+          of the Hawaiian Islands and deprive Hawaiʻi’s native people of their
+          national status, identity, language, culture, health, land, and other
+          freedoms.
         </p>
         <p>
-          When you enter into class, you and your classmates stand alongside
-          your desks, and in unison, everyone recites the following salutation:
+          A prime example of this was when students entered into class, they
+          stood alongside their desks, and in unison, recited the following
+          salutation:
         </p>
         <blockquote>
           &ldquo;We give our heads and our hearts to God and our Country! One
@@ -126,24 +130,28 @@ const accordionMessages: AccordionMessage[] = [
     )
   },
   {
-    title:
-      "Honolulu High School is renamed President William McKinley High School, 1907",
+    title: "Honolulu High School Falls, McKinley Statue Rises, 1907 & 1911",
     body: (
       <>
         <p>
           Disregarding its location and students, Honolulu High School was
-          renamed President William McKinley High to honor the 25th president,
-          &ldquo;whose influence helped to bring about the annexation of the
-          Hawaiian Islands to the United States.&rdquo;
+          renamed President William McKinley High School to honor the 25th
+          president, “whose influence helped to bring about the annexation of
+          the Hawaiian Islands to the United States.”
         </p>
         <p>
-          This illegal annexation helped displace Native Hawaiians in their
-          homeland physically, mentally, emotionally, and spiritually.
+          Four years later, a bronze, eight-ton statue of McKinley was erected
+          as a memorial to the U.S. president who is responsible for intentional
+          actions to illegally acquire the Hawaiian Kingdom for the United
+          States and eradicate its existence.
         </p>
         <p>
-          To commemorate this man, in 1911, a bronze, eight-ton &ldquo;statue of
-          President McKinley was commissioned for $8,000&rdquo; and dedicated to
-          the school.
+          The name of the school and statue symbolizes a leader who ignored
+          international law by assimilating the Hawaiian Kingdom, politically,
+          culturally, socially, and economically, into the United States. The
+          most egregious aspect of the statue is that he is holding a scroll in
+          his right hand inscribed, “Treaty of Annexation,” which is an outright
+          lie.
         </p>
         <SourceLink href="http://www.mhs150years.com">
           McKinley High School
