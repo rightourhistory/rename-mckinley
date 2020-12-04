@@ -1,7 +1,7 @@
 @import "../../../mixins.scss";
 
 .five-reasons {
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   color: var(--text-color--dark-primary);
   background-image: url(../../../images/topo.jpg);
   background-blend-mode: multiply;
@@ -9,8 +9,7 @@
   background-attachment: fixed;
   background-color: var(--background-color--white);
   @include mq(medium) {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+    padding: 16rem 2rem;
   }
   &__container {
     display: flex;
@@ -26,6 +25,7 @@
     align-self: flex-start;
     font-size: 4.4rem;
     line-height: 125%;
+    margin: 2rem 0 2rem;
     max-width: 76rem;
     font-weight: 900;
     text-align: center;

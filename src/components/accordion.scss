@@ -11,27 +11,44 @@
     counter-increment: accordion;
     position: relative;
     border: 0;
-    padding: 3rem 3rem 3rem 1rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
-    border: var(--text-color--dark-primary) 1rem solid;
+    align-items: center;
+    border: var(--text-color--dark-primary) 0.25rem solid;
     border-bottom: 0;
     background: var(--background-color--white);
     transition: background ease-out 150ms;
+    @include mq(medium) {
+      padding: 3rem 3rem 3rem 1rem;
+      align-items: initial;
+      border-width: 1rem;
+    }
+    &--open {
+      align-items: initial;
+    }
     &:before {
       content: "0" counter(accordion) ".";
       font-family: var(--text-font--script);
-      font-size: 2.4rem;
-      margin: 0 2rem 0 1rem;
+      font-size: 2rem;
+      margin: 0 1rem 0 0;
       flex-shrink: 0;
+      align-self: flex-start;
+      @include mq(medium) {
+        font-size: 2.4rem;
+        margin: 0 2rem 0 1rem;
+      }
     }
     &:last-of-type {
-      border-bottom: var(--text-color--dark-primary) 1rem solid;
+      border-bottom: var(--text-color--dark-primary) 0.25rem solid;
+      @include mq(medium) {
+        border-width: 1rem;
+      }
     }
   }
   &__title {
     display: flex;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin: 0;
     padding-right: 6rem;
     line-height: 120%;
@@ -54,9 +71,15 @@
     }
     p {
       margin: 0 0 1rem 0;
-      font-size: 2rem;
+      font-size: 1.4rem;
       &:first-of-type {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        @include mq(medium) {
+          margin-top: 2rem;
+        }
+      }
+      @include mq(medium) {
+        font-size: 2rem;
       }
     }
     blockquote {
@@ -65,15 +88,18 @@
       background-color: var(--color--gray);
       width: 100%;
       border-radius: 0.8rem;
-      font-size: 2.4rem;
+      font-size: 1.6rem;
       line-height: 1.5;
       font-weight: 700;
+      @include mq(medium) {
+        font-size: 2.4rem;
+      }
     }
   }
   &__icon {
     padding-top: 1.25rem;
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 2.6rem;
+    height: 2.6rem;
     align-self: flex-start;
     color: inherit; //button reset
     font: inherit; //button reset
@@ -83,6 +109,10 @@
     background: none; //button reset
     border: 0; //button reset
     padding: 0; //button reset
+    @include mq(medium) {
+      width: 5.2rem;
+      height: 5.2rem;
+    }
     svg {
       width: 100%;
       height: auto;
