@@ -11,8 +11,37 @@ export default class Intro extends React.Component {
   render() {
     return (
       <div className="intro">
+        <IntroParagraph />
         <IntroPolicy />
         <IntroAssociation />
+      </div>
+    );
+  }
+}
+
+class IntroParagraph extends React.Component {
+  render() {
+    return (
+      <div className="intro-paragraph">
+        <div className="intro-paragraph__container">
+          <div className="intro-paragraph__text">
+            <p>
+              What is currently called President William McKinley High School is
+              one of the oldest secondary schools in the Hawaiian Islands. It
+              was originally established in the Hawaiian Kingdom in 1865 as the
+              Fort Street English Day School.
+            </p>
+            <p>
+              In November 1869, it was relocated to Princess Ruth’s Palace, and
+              in 1895 it was renamed Honolulu High School. In 1907, the school
+              was moved to the corner of Beretania and Victoria Streets and the
+              school’s name was then changed to President William McKinley High
+              School, for the leading role he played in bringing about the
+              illegitimate “annexation” of the Hawaiian Kingdom to the United
+              States.
+            </p>
+          </div>
+        </div>
       </div>
     );
   }

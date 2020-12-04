@@ -16,9 +16,28 @@
   }
 }
 
-.intro-policy {
+.intro-paragraph {
   max-width: 160rem;
   margin: 8rem auto 0;
+  padding: 0 2rem;
+
+  @include mq(small) {
+    padding: 0 8rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--text-color--light-primary);
+    @include mq(small) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.intro-policy {
+  max-width: 160rem;
+  margin: 4rem auto 0;
   padding: 0 2rem;
   color: var(--text-color--light-red);
 
@@ -27,8 +46,14 @@
   }
 
   &__text {
-    font-size: 2.4rem;
     font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--text-color--light-primary);
+    @include mq(small) {
+      font-size: 2.4rem;
+    }
+
     strong {
       color: var(--text-color--light-primary);
     }
@@ -36,9 +61,13 @@
   &__blockquote {
     font-family: var(--text-font--script);
     color: var(--text-color--light-primary);
-    font-size: 4.8rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 2rem;
+    @include mq(small) {
+      font-size: 4.8rem;
+      margin-left: 4rem;
+    }
   }
   &__subtext {
     color: var(--text-color--light-red);
@@ -48,8 +77,22 @@
 }
 
 .intro-association {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--text-color--light-red);
+  @include mq(small) {
+    font-size: 2rem;
+  }
+  &__container {
+    max-width: 112rem;
+    margin: 8rem auto 0;
+    padding: 0 2rem;
+    @include mq(large) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10rem;
+      font-size: 2rem;
+    }
+  }
   &__marquee {
     position: absolute;
     z-index: 105;
@@ -58,21 +101,24 @@
     overflow: hidden;
     margin-top: 2rem;
   }
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
-    max-width: 140rem;
-    margin: 8rem auto 0;
-    padding: 0 16rem;
-  }
   &__column {
     display: flex;
     flex-direction: column;
     p {
+      position: relative;
+      z-index: 600;
       margin: 2rem 0 0;
+      background: var(--background-color--accent);
+
+      @include mq(large) {
+        box-shadow: none;
+        background: none;
+      }
       &:first-of-type {
-        margin-top: 4rem;
+        margin-top: -8rem;
+        @include mq(large) {
+          margin-top: 4rem;
+        }
       }
       &:last-of-type {
         margin-bottom: 4rem;
@@ -93,7 +139,9 @@
     }
     &--1 {
       .intro-association__image {
-        align-self: flex-end;
+        @include mq(large) {
+          align-self: flex-end;
+        }
       }
       s:after {
         height: 0.6rem;
