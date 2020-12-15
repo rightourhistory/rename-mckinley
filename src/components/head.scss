@@ -6,7 +6,9 @@
   width: 100%;
 
   &--left {
-    position: fixed;
+    @include mq(medium) {
+      position: fixed;
+    }
   }
 
   &__container {

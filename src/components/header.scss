@@ -1,23 +1,31 @@
+@import "../mixins.scss";
+
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 10000;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   pointer-events: none;
+  @include mq(medium) {
+    position: fixed;
+  }
   &__logo {
     display: inline-block;
     height: auto;
-    width: 18rem;
+    width: 12rem;
     fill: var(--text-color--dark-primary);
+    @include mq(medium) {
+      width: 18rem;
+    }
   }
   &__cta {
-    letter-spacing: 0.15rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
     align-self: center;
     background: var(--color--accent);
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 0.8rem;
     text-decoration: none;
     color: var(--color--warmwhite);
@@ -26,6 +34,11 @@
     pointer-events: initial;
     &:hover {
       background: var(--color--accent-medium);
+    }
+    @include mq(medium) {
+      font-size: 1.6rem;
+      letter-spacing: 0.15rem;
+      padding: 1rem 2rem;
     }
   }
 }

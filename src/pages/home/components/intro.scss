@@ -83,8 +83,12 @@
 .intro-association {
   font-size: 1.6rem;
   color: var(--text-color--light-red);
+  overflow: hidden;
   @include mq(small) {
     font-size: 2rem;
+  }
+  @include mq(large) {
+    overflow: initial;
   }
   &__container {
     max-width: 112rem;
