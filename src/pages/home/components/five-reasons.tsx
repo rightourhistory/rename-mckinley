@@ -128,24 +128,33 @@ const accordionMessages: AccordionMessage[] = [
     body: (
       <>
         <p>
-          Disregarding its location and students, Honolulu High School was
-          renamed President William McKinley High School to honor the 25th
-          president, “whose influence helped to bring about the annexation of
-          the Hawaiian Islands to the United States.”
+          When Honolulu High School was renamed President William McKinley High
+          School in 1907 and his statue was erected in 1911, it was not simply
+          to honor the 25th president of the United States. Rather, it was a
+          calculated strategy to maliciously remind Native Hawaiians that their
+          culture was rapidly dying--they were now Americans and they had better
+          not forget it.
         </p>
         <p>
-          Four years later, a bronze, eight-ton statue of McKinley was erected
-          as a memorial to the U.S. president who is responsible for intentional
-          actions to illegally acquire the Hawaiian Kingdom for the United
-          States and eradicate its existence.
+          The name of the school and statue does not symbolize pride or honor;
+          it symbolizes hurt, pain, and injustice. It symbolizes Native
+          Hawaiians who lost everything and live on through their kūʻe and
+          offspring who continue striving to rebuild what was stolen from them.
+          It symbolizes a liar who holds a scroll in his right hand inscribed,
+          “Treaty of Annexation,” when the truth is, no treaty has ever been
+          ratified.
         </p>
         <p>
-          The name of the school and statue symbolizes a leader who ignored
-          international law by assimilating the Hawaiian Kingdom, politically,
-          culturally, socially, and economically, into the United States. The
-          most egregious aspect of the statue is that he is holding a scroll in
-          his right hand inscribed, “Treaty of Annexation,” which is an outright
-          lie.
+          But equally as important, it symbolizes an opportunity; an opportunity
+          to give a small victory back to Native Hawaiians. An opportunity to
+          share that not all aloha is lost and that the Native Hawaiians’
+          rightful fight for their homeland has not been forgotten or
+          overlooked.
+        </p>
+        <p>
+          It is the perfect opportunity to show a willingness to acknowledge
+          McKinley’s wrongdoings and, in turn, rename the high school and remove
+          his statue.
         </p>
         <SourceLink href="http://www.mhs150years.com">
           McKinley High School
