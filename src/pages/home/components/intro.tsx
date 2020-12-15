@@ -11,7 +11,23 @@ export default class Intro extends React.Component {
   render() {
     return (
       <div className="intro">
-        <IntroParagraph />
+        <IntroParagraph>
+          <p>
+            What is currently called President William McKinley High School is
+            one of the oldest secondary schools in the Hawaiian Islands. It was
+            originally established in the Hawaiian Kingdom in 1865 as the Fort
+            Street English Day School.
+          </p>
+          <p>
+            In November 1869, it was relocated to Princess Ruth’s Palace, and in
+            1895 it was renamed Honolulu High School. In 1907, the school was
+            moved to the corner of Beretania and Victoria Streets and the
+            school’s name was then changed to President William McKinley High
+            School, for the leading role he played in bringing about the
+            illegitimate “annexation” of the Hawaiian Kingdom to the United
+            States.
+          </p>
+        </IntroParagraph>
         <IntroPolicy />
         <IntroAssociation />
       </div>
@@ -24,23 +40,7 @@ class IntroParagraph extends React.Component {
     return (
       <div className="intro-paragraph">
         <div className="intro-paragraph__container">
-          <div className="intro-paragraph__text">
-            <p>
-              What is currently called President William McKinley High School is
-              one of the oldest secondary schools in the Hawaiian Islands. It
-              was originally established in the Hawaiian Kingdom in 1865 as the
-              Fort Street English Day School.
-            </p>
-            <p>
-              In November 1869, it was relocated to Princess Ruth’s Palace, and
-              in 1895 it was renamed Honolulu High School. In 1907, the school
-              was moved to the corner of Beretania and Victoria Streets and the
-              school’s name was then changed to President William McKinley High
-              School, for the leading role he played in bringing about the
-              illegitimate “annexation” of the Hawaiian Kingdom to the United
-              States.
-            </p>
-          </div>
+          <div className="intro-paragraph__text">{this.props.children}</div>
         </div>
       </div>
     );
@@ -140,33 +140,50 @@ class IntroAssociation extends React.Component {
               <GrainOverlay dark />
               <img src={AnnexationCeremoney} style={{ width: "320px" }} />
             </div>
+            <h2>
+              Acknowledging <em>History</em>
+            </h2>
             <p>
-              Well, let’s just say the former U.S. president{" "}
-              <s>William McKinley</s> has more than a controversial history with
-              the community of Hawai‘i.
+              The Hawaiian Kingdom never ceded to the United States. Renaming
+              the school’s name and removing the statue are the right actions to
+              correct the false narrative regarding the annexation of the
+              Hawaiian Islands.
+            </p>
+            <h2>The School Deserves Better</h2>
+            <p>
+              The decision will neither diminish the ethos or the school’s
+              achievements, nor negate the accomplishments of the alumni.
             </p>
             <p>
-              In 1898, this man thrusted Hawai‘i into the United States when he
-              illegally annexed the Kingdom of Hawaiʻi in the name of Manifest
-              Destiny and westward expansion.
+              On the contrary, the name change and statue removal will
+              demonstrate the courage to tell the truth and thereby, bring even
+              more esteem and reverence to everyone connected with the school –
+              past, present, and future.
             </p>
-            <div
-              className="intro-association__image"
-              style={{
-                width: "420px"
-              }}
-            >
-              <GrainOverlay dark />
-              <img src={AnnexationMarines} style={{ width: "420px" }} />
+            {/* <div
+                className="intro-association__image"
+                style={{
+                  width: "420px"
+                }}
+              >
+                <GrainOverlay dark />
+                <img src={AnnexationMarines} style={{ width: "420px" }} />
+              </div> */}
+            <div className="intro-association__video">
+              <iframe
+                id="video-kitv"
+                src="https://www.youtube-nocookie.com/embed/i-ZBeKiYidE?modestbranding"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
           <div className="intro-association__column intro-association__column--2">
-            <div className="intro-association__image">
-              <GrainOverlay dark />
+            <div className="intro-association__video">
               <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/gX7Vln312bc"
+                id="video-hnn"
+                src="https://www.youtube-nocookie.com/embed/gX7Vln312bc?modestbranding"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -181,6 +198,7 @@ class IntroAssociation extends React.Component {
               <GrainOverlay dark />
               <img src={AnnexationClub} style={{ width: "360px" }} />
             </div>
+            <h2>Empowering Native Peoples Everywhere</h2>
             <p>
               In 2015, the native Alaskan community and its allies successfully
               renamed Mount <s data-text="Denali">McKinley</s>.
