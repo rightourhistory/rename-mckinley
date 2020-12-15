@@ -1,18 +1,22 @@
 @import "../../../mixins.scss";
 
 .intro {
-  padding: 8rem 0;
+  padding: 8rem 0 0;
   background-image: url(../../../images/topo.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--background-color--accent);
+  margin-bottom: -2rem;
 
   @include mq(small) {
-    padding: 16rem 0;
+    padding: 16rem 0 0;
+    margin-bottom: -4rem;
   }
   @include mq(medium) {
     padding-top: 24rem;
+    padding-bottom: 0;
+    margin-bottom: -8rem;
   }
 }
 
@@ -149,6 +153,10 @@
       }
     }
     &--1 {
+      margin-bottom: 2rem;
+      @include mq(large) {
+        margin-bottom: 0;
+      }
       .intro-association__image {
         @include mq(large) {
           align-self: flex-end;
@@ -197,17 +205,10 @@
           }
         }
       }
-      p {
-        max-width: 48rem;
-      }
       .intro-association__image {
         z-index: 110;
         align-self: flex-start;
         margin-top: 5rem;
-        &:last-of-type {
-          margin-top: 0;
-          margin-bottom: 0;
-        }
       }
       .intro-association__video {
         @include mq(large) {
@@ -222,8 +223,16 @@
     overflow: hidden;
     transform: rotate(-16deg) translateX(-4rem);
     transform-origin: center left;
+    width: 320px;
+    &:last-of-type {
+      align-self: flex-end;
+      transform-origin: top right;
+      transform: rotate(16deg) translateX(4rem);
+    }
     @include mq(large) {
-      transform: none;
+      width: auto;
+      transform: none !important;
+      width: calc(100% - 8rem);
     }
   }
   &__video {

@@ -17,7 +17,7 @@
     max-width: 180rem;
     width: 100%;
     margin: 0 auto;
-    @include mq(small) {
+    @include mq(medium) {
       flex-direction: row;
     }
   }
@@ -30,13 +30,11 @@
     font-weight: 900;
     text-align: center;
 
-    @include mq(small) {
+    @include mq(medium) {
       text-align: right;
       line-height: 150%;
       margin: 2rem 4rem 0 0;
       padding: 4rem 0;
-    }
-    @include mq(medium) {
       position: sticky;
       top: 10rem;
       flex-direction: row;

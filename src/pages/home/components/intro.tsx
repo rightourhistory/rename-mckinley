@@ -131,14 +131,9 @@ class IntroAssociation extends React.Component {
         </div>
         <div className="intro-association__container">
           <div className="intro-association__column intro-association__column--1">
-            <div
-              className="intro-association__image"
-              style={{
-                width: "320px"
-              }}
-            >
+            <div className="intro-association__image">
               <GrainOverlay dark />
-              <img src={AnnexationCeremoney} style={{ width: "320px" }} />
+              <img src={AnnexationCeremoney} style={{ width: "100%" }} />
             </div>
             <h2>
               Acknowledging <em>History</em>
@@ -160,15 +155,6 @@ class IntroAssociation extends React.Component {
               more esteem and reverence to everyone connected with the school –
               past, present, and future.
             </p>
-            {/* <div
-                className="intro-association__image"
-                style={{
-                  width: "420px"
-                }}
-              >
-                <GrainOverlay dark />
-                <img src={AnnexationMarines} style={{ width: "420px" }} />
-              </div> */}
             <div className="intro-association__video">
               <iframe
                 id="video-kitv"
@@ -189,14 +175,9 @@ class IntroAssociation extends React.Component {
                 allowFullScreen
               ></iframe>
             </div>
-            <div
-              className="intro-association__image"
-              style={{
-                width: "360px"
-              }}
-            >
+            <div className="intro-association__image">
               <GrainOverlay dark />
-              <img src={AnnexationClub} style={{ width: "360px" }} />
+              <img src={AnnexationClub} style={{ width: "100%" }} />
             </div>
             <h2>Empowering Native Peoples Everywhere</h2>
             <p>
@@ -229,6 +210,10 @@ class IntroAssociation extends React.Component {
               >
                 William S. Richard School of Law
               </SourceLink>
+            </div>
+            <div className="intro-association__image">
+              <GrainOverlay dark />
+              <img src={AnnexationMarines} style={{ width: "100%" }} />
             </div>
           </div>
         </div>
