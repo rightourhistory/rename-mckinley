@@ -32,11 +32,7 @@
 
 .logo {
   &__base {
-    fill: rgba(#fff, 0);
-    transition: fill 250ms ease-out;
-    .header--full & {
-      fill: var(--background-color--white);
-    }
+    fill: var(--background-color--white);
   }
 }
 
