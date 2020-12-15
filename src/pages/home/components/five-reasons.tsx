@@ -30,7 +30,7 @@ const accordionMessages: AccordionMessage[] = [
   },
   {
     title:
-      "Kūʻe Petitions & Queen Liliʻuokalani Patriotically Protest Annexation, 1897:",
+      "Kūʻe Petitions & Queen Liliʻuokalani Patriotically Protest Annexation, 1897",
     body: (
       <>
         <p>
@@ -77,12 +77,6 @@ const accordionMessages: AccordionMessage[] = [
           actions ultimately displaced Native Hawaiians in their
           homeland--physically, mentally, emotionally, and spiritually.
         </p>
-        <SourceLink href="https://books.google.com/books?id=vYF3AAAAMAAJ&pg=PA296&lpg=PA296">
-          Morgan, H. Wayne.
-        </SourceLink>
-        <SourceLink href="https://www.history.com/topics/westward-expansion/manifest-destiny">
-          History.com
-        </SourceLink>
         <SourceLink href="http://hdl.handle.net/10125/37601">
           William S. Richard School of Law
         </SourceLink>
@@ -167,7 +161,8 @@ export default class FiveReasons extends React.Component {
       <div className="five-reasons">
         <div className="five-reasons__container">
           <h3 className="five-reasons__title">
-            <strong>5 REASONS</strong> TO RENAME MCKINLEY HIGH SCHOOL
+            <strong>5 REASONS</strong> TO RENAME MCKINLEY HIGH SCHOOL{" "}
+            <span>AND REMOVE HIS STATUE</span>
           </h3>
           <div className="five-reasons__accordion">
             <Accordion messages={accordionMessages} />

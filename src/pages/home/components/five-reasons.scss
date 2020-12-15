@@ -47,6 +47,10 @@
       font-weight: inherit;
       color: var(--text-color--dark-primary);
     }
+
+    span {
+      color: var(--text-color--dark-secondary);
+    }
   }
   &__accordion {
     min-width: 50%;

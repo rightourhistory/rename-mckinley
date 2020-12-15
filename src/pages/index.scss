@@ -7,6 +7,7 @@ html {
   --color--accent-medium: #b3260d;
   --color--accent-dark: #702415;
   --color--nearblack: #090909;
+  --color--black-medium: #444;
   --color--gray-dark: #999;
   --color--gray: #eee;
   --color--warmwhite: #e2e0e0;
@@ -22,6 +23,7 @@ html {
   --text-color--light-secondary: var(--color--white-opac);
   --text-color--light-red: var(--color--white-red);
   --text-color--dark-primary: var(--color--nearblack);
+  --text-color--dark-secondary: var(--color--black-medium);
   --text-color--accent: var(--color--accent);
   --text-color--accent-dark: var(--color--accent-dark);
   --text-font--sans-serif: "Lato", sans-serif;
