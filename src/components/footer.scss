@@ -32,6 +32,9 @@
       &__text {
         fill: var(--text-color--light-primary);
       }
+      &__base {
+        fill: transparent;
+      }
     }
   }
   &__links {
