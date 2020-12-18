@@ -248,9 +248,6 @@ export default class RequestLetter extends React.Component<{}, State> {
         </article>
 
         <div className="request-letter__cta">
-          <h4>
-            Want to join us and thousands speaking up for a better history?
-          </h4>
           <a
             href="https://sign.moveon.org/petitions/restore-original-name"
             target="_blank"

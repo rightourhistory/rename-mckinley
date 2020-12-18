@@ -50,7 +50,7 @@
     display: flex;
     font-size: 1.8rem;
     margin: 0;
-    padding-right: 6rem;
+    padding-right: 3rem;
     line-height: 120%;
     color: var(--text-color--dark-primary);
     cursor: pointer;
@@ -59,6 +59,7 @@
     }
     @include mq(medium) {
       font-size: 4.4rem;
+      padding-right: 6rem;
     }
   }
   &__body {
