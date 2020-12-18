@@ -185,62 +185,56 @@ export default class RequestLetter extends React.Component<{}, State> {
             </main>
             <footer className="request-letter-body__footer">
               <p>Mahalo nui,</p>
-              <p className="signature signature--big">
-                Aoloa Patao
-                <a href="mailto:aoloapatao@gmail.com">aoloapatao@gmail.com</a>
-              </p>
+              <h4 className="signature signature--big">
+                <span>Aoloa Patao</span>
+                <span>DOE Teacher</span>
+              </h4>
               <h6>Co-signed by:</h6>
               <div className="cosignatures">
-                <p className="signature">
-                  Poka Laenui, Esq.
-                  <br />
+                <h4 className="signature">
+                  <span>Poka Laenui, Esq.</span>
                   <span>
                     Pioneer, Hawaiian Nation Restoration
                     <br />
                     Addressed UN General Assembly, 1993
                   </span>
-                </p>
-                <p className="signature">
-                  Lyla B. Berg, PhD
-                  <br />
+                </h4>
+                <h4 className="signature">
+                  <span>Lyla B. Berg, PhD</span>
                   <span>
                     Retired DOE Principal
                     <br />
                     State Representative, 18th District (2004-2010)
                   </span>
-                </p>
-                <p className="signature">
-                  Williamson B. Chang, Esq.
-                  <br />
+                </h4>
+                <h4 className="signature">
+                  <span>Williamson B. Chang, Esq.</span>
                   <span>
                     Professor, U.H. School of Law
                     <br />
                     Author, “The Annexation Myth”
                   </span>
-                </p>
-                <p className="signature">
-                  Leon Siu
-                  <br />
+                </h4>
+                <h4 className="signature">
+                  <span>Leon Siu</span>
                   <span>
                     Diplomat
                     <br />
                     Hawaiian National
                   </span>
-                </p>
-                <p className="signature">
-                  Dr. Kioni Dudley
-                  <br />
+                </h4>
+                <h4 className="signature">
+                  <span>Dr. Kioni Dudley</span>
                   <span>
                     Retired DOE teacher
                     <br />
                     Co-author A Call for Hawaiian Sovereignty
                   </span>
-                </p>
-                <p className="signature">
-                  D. Piilani Kaopuiki
-                  <br />
+                </h4>
+                <h4 className="signature">
+                  <span>D. Piilani Kaopuiki</span>
                   <span>President William McKinley HS ʻ62</span>
-                </p>
+                </h4>
               </div>
               <h6>CC Catherine Payne, BOE Chairperson</h6>
             </footer>
