@@ -34,7 +34,7 @@ export default class Home extends React.Component<{}, State> {
             async
             defer
             data-domain="rightourhistoryhawaii.com"
-            src="https://plausible.io/js/plausible.js"
+            src="https://plausible.io/js/plausible.outbound-links.js"
           ></script>
           <link
             rel="apple-touch-icon"

@@ -34,7 +34,7 @@ export default class Header extends React.Component<Props, State> {
           </div>
           <a
             className="header__cta"
-            href="https://sign.moveon.org/petitions/restore-original-name"
+            href="https://sign.moveon.org/petitions/restore-original-name?ref=nav"
             target="_blank"
           >
             Sign the Petition

@@ -243,7 +243,7 @@ export default class RequestLetter extends React.Component<{}, State> {
 
         <div className="request-letter__cta">
           <a
-            href="https://sign.moveon.org/petitions/restore-original-name"
+            href="https://sign.moveon.org/petitions/restore-original-name?ref=footer"
             target="_blank"
           >
             Sign The Petition
