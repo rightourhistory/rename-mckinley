@@ -40,12 +40,16 @@ export class Head extends React.Component<Props> {
       </div>
     );
   }
-  componentDidMount() {
+  componentWillReceiveProps(props: Props) {
     if (document) {
-      const updateEyePosition = throttle((event: any) => {
-        this.updateEyePosition(event);
-      }, 75);
-      document.body.addEventListener("mousemove", updateEyePosition);
+      if (props.position === HeadPosition.Left) {
+        document.body.onmousemove = null;
+      } else {
+        const updateEyePosition = throttle((event: any) => {
+          this.updateEyePosition(event);
+        }, 75);
+        document.body.onmousemove = updateEyePosition;
+      }
     }
   }
   updateEyePosition(event: MouseEvent) {
