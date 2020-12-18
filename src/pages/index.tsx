@@ -36,6 +36,27 @@ export default class Home extends React.Component<{}, State> {
             data-domain="rightourhistoryhawaii.com"
             src="https://plausible.io/js/plausible.js"
           ></script>
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#583f8c" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
         </Helmet>
         <main className="main">
           <Header onToggleHeader={this.toggleHeadPosition} />
