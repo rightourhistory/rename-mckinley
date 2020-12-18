@@ -30,6 +30,12 @@ export default class Home extends React.Component<{}, State> {
           <meta charSet="utf-8" />
           <title>Right Our History Hawaii</title>
           <link rel="canonical" href="http://rightourhistoryhawaii.com" />
+          <script
+            async
+            defer
+            data-domain="rightourhistoryhawaii.com"
+            src="https://plausible.io/js/plausible.js"
+          ></script>
         </Helmet>
         <main className="main">
           <Header onToggleHeader={this.toggleHeadPosition} />
